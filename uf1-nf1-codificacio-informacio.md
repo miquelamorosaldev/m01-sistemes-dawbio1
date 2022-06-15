@@ -8,14 +8,23 @@
 
 **Informàtica.-** Es l’acrònim de “Informació Automàtica”. Podem definir <em>la informàtica com la ciència que estudia el tractament automàtic i racional de la informació.</em>
 
-**Bioinformàtica.-** La bioinformàtica és l'aplicació de tecnologies computacionals i l'estadística a la gestió i anàlisi de dades biològiques; amb la intenció d'estudiar,
-analitzar i processar informació genètica, molecular i clínica per generar nou coneixement, noves eines diagnòstiques i noves teràpies.
+**Bioinformàtica.-** La bioinformàtica és l'aplicació de tecnologies computacionals i l'estadística a la gestió i anàlisi de dades biològiques; amb la intenció d'estudiar, analitzar i processar informació genètica, molecular i clínica per generar nou coneixement, noves eines diagnòstiques i noves teràpies.
+
+---
 
 **Programa.-** És una seqüència d’instruccions accions definides a priori que poden ser executades per part d’un procesador que tenen la finalitat
 d'oferir als/les usuaris/es una funcionalitat: tractament d'informació, edició de documents, navegador d'Internet, joc d'entreteniment ...
 
 **Procés.-** Es cada una de les tasques realitzades per un ordinador. També es considera com procés cadascuna de les instàncies d’un programa. 
 El procés es qui s’encarrega de ordenar i classificar les dades per donar-nos una informació útil.
+
+Simplificant, **un procés és un programa en execució.**
+
+**Servei.-** A Linux, també conegut com a daemon. És un programa que s'està executant en segon pla, fora del control de l'usuari. Normalment, el Sistema Operatiu
+arrenca una serie de serveis/dimonis necessaris pel seu funcionament.
+
+---
+
 
 **Ordinador.-** Dispositiu físic construït a base de components electrònics i electromecànics situats dins d’una carcassa, que ha estat dissenyat per a 
 tractar instruccions concretes, les quals prenen la forma de programes. Es qui executa el tractament automàtic de la informació. La paraula Ordinador, deriva de la paraula francesa "Ordinateur”, En molts països hispano-parlants de cultura tècnica
@@ -30,6 +39,7 @@ S’hi inclouen els elements de programari, de maquinari i els éssers humans.
 el maquinari (CPU, memòria, discs durs, etc...), el programari, i com els usuaris hi interactuen.
 El diseny es basa en una estructura en capes. 
 
+---
 
 ## Part física d'un sistema informàtic (maquinari).
 
