@@ -13,10 +13,9 @@
 ---
 
 **Programa.-** És una seqüència d’instruccions accions definides a priori que poden ser executades per part d’un procesador que tenen la finalitat
-d'oferir als/les usuaris/es una funcionalitat: tractament d'informació, edició de documents, navegador d'Internet, joc d'entreteniment ...
+d'oferir als/les usuaris/es una funcionalitat: tractament d'informació, edició de documents, navegador ...
 
 **Procés.-** Es cada una de les tasques realitzades per un ordinador. També es considera com procés cadascuna de les instàncies d’un programa. 
-El procés es qui s’encarrega de ordenar i classificar les dades per donar-nos una informació útil.
 
 Simplificant, **un procés és un programa en execució.**
 
@@ -35,11 +34,24 @@ més influenciada por USA, s’utilitza el terme "computadora"; més semblant al
 **Sistema Informàtic** és el conjunt d'elements necessaris per a la realització i l’explotació d'aplicacions informàtiques. 
 S’hi inclouen els elements de programari, de maquinari i els éssers humans.
 
-**Sistema Operatiu** És un Sistema Informàtic que utilitzen els ordinadors per a facilitar administració dels seus recursos:
-el maquinari (CPU, memòria, discs durs, etc...), el programari, i com els usuaris hi interactuen.
-El diseny es basa en una estructura en capes. 
+#### En aquest mòdul estudiarem l'ús dels Sistemes Operatius, especialment els més comuns per a desenvolupadors: Linux i Windows.
 
 ---
+
+# Sistema Operatiu
+És un Sistema Informàtic que utilitzen els ordinadors per a facilitar administració dels seus recursos:
+el maquinari (CPU, memòria, discs durs, etc...), el programari, i com els usuaris hi interactuen.
+El diseny es basa en una estructura en capes.
+
+![Capes d'un Sistema Operatiu](https://github.com/miquelamorosaldev/m01-sistemes-dawbio-2122/blob/main/imgs-CapesSO.svg)
+
+Les capes que conté un Sistema Operatiu són:
+- El nucli o Kernel.
+- Les aplicacions del nucli
+- L'entorn gràfic
+
+<em>Exemple: A Ubuntu l'entorn per defecte és el Gnome, però si volem se li pot canviar per altres, com KDE.</em>
+<em>També hi ha sistemes operatius sense entorn gràfic, com per exemple FreeDOS o algunes de Linux (Slitaz)</em>
 
 ## Part física d'un sistema informàtic (maquinari).
 
@@ -58,6 +70,8 @@ En resum, solen contenir:
 - Ranures per a la memòria RAM.
 - Xipset: conté connectors als processadors, memòries, unitats d'emmagatzematge secundari (pex. disc dur i connectors USB), targetes gràfiques (GPU).
 
+![Parts Placa Base](https://github.com/miquelamorosaldev/m01-sistemes-dawbio-2122/blob/main/imgs-Placa.svg)
+
 ## Part lògica d'un sistema informàtic (programari)
   
 El programari (software) és compost per tot allò que fem servir en el camp de la informàtica que no podem veure ni tocar.
@@ -66,7 +80,7 @@ El programari (software) és compost per tot allò que fem servir en el camp de 
 
 #### Tipus de programari:
   
-**Programari bàsic** 
+**Programari bàsic del nucli** 
 Conjunt de programes que l’equip físic necessita per a tenir capacitat de treballar. Aquests configuren el que s’anomena sistema operatiu.
 Exemples: Unix, GNU/Linux, Windows, OS X, Solaris, Android, iOS, etc...
 
