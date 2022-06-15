@@ -70,7 +70,7 @@ En resum, solen contenir:
 - Ranures per a la memòria RAM.
 - Xipset: conté connectors als processadors, memòries, unitats d'emmagatzematge secundari (pex. disc dur i connectors USB), targetes gràfiques (GPU).
 
-![Parts Placa Base](https://github.com/miquelamorosaldev/m01-sistemes-dawbio-2122/blob/main/imgs-Placa.svg)
+![Parts Placa Base](https://github.com/miquelamorosaldev/m01-sistemes-dawbio-2122/blob/main/imgs-PlacaBase.jpg)
 
 ## Part lògica d'un sistema informàtic (programari)
   
