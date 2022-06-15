@@ -30,13 +30,13 @@ S’hi inclouen els elements de programari, de maquinari i els éssers humans.
 el maquinari (CPU, memòria, discs durs, etc...), el programari, i com els usuaris hi interactuen.
 El diseny es basa en una estructura en capes. 
 
-## Part física d'un sistema informàtic - Maquinari.
+## Part física d'un sistema informàtic (maquinari).
 
 El maquinari (hardware) fa referència a tot allò que podem veure i tocar de l'ordinador.
 
 Parts del maquinari.
 
-* La <strong>placa mare o placa base (en anglès motherboard)<strong> és la targeta de circuits impresos central a l'ordinador que conté
+* La <strong>placa mare o placa base (en anglès motherboard)</strong> és la targeta de circuits impresos central a l'ordinador que conté
 el microprocessador, la memòria RAM del sistema, circuits electrònics de suport i targetes adaptadores addicionals: pantalla, xarxa, teclat, etc...
 Aquestes targetes solen realitzar funcions de control de perifèrics, com monitors, impressores, unitats de disc, etc.
 
@@ -46,10 +46,47 @@ En resum, solen contenir:
 - Un o més ventiladors per evitar sobrescalfament
 - Ranures per a la memòria RAM.
 - Xipset: conté connectors als processadors, memòries, unitats d'emmagatzematge secundari (pex. disc dur i connectors USB), targetes gràfiques (GPU).
+
+## Part lògica d'un sistema informàtic (programari)
+  
+El programari (software) és compost per tot allò que fem servir en el camp de la informàtica que no podem veure ni tocar.
+
+Exemples: jocs d’ordinadors, programes de comptabilitat, sistemes operatius, etc...
+
+#### Tipus de programari:
+  
+El programari bàsic és el conjunt de programes que l’equip físic necessita per a tenir capacitat de treballar. Aquests configuren el que s’anomena sistema operatiu.
+Exemples: Unix, GNU/Linux, Windows, OS X, Solaris, Android, iOS, etc...
+
+El programari d'aplicació són els programes que fan que l’ordinador desenvolupi una tasca determinada.
+Exemples: Libre Office, Firefox, Gimp, etc...  
+
+Processadors de llenguatges de programació; que s'utilitzen per a què els éssers humans amb formació prèvia puguin crear programari eficientment i amb un llenguatge més entenedor que el del processador. Quasi tots els programes que s'executen en un ordinador han estat escrits en algun llenguatge de programació.
+crear programari més fàcilment i eficientment.
+Llenguatges de programació moderns: Python, Java, PHP, C#, Fortran, JavaScript.
+  
+Amb el terminal dels sistemes operatius (shell de Linux bash, Powershell de Windows) també es poden crear programes senzills però són més adients
+  per fer operacions d'organitzar el disc dur i el sistema operatiu.
+
+## Part humana d'un sistema informàtic (usuàries)
+  
+És la persona que utilitza la informàtica com a eina per a desenvolupar el seu treball o com a ajuda en una activitat.
+
+Cal tenir uns coneixements informàtics bàsics i, particularment, tenir uns grans coneixements sobre el funcionament de l’aplicació informàtica que està utilitzant.
+
+``` Per exemple, l’usuari d’aplicacions ofimàtiques. ```
+
+#### Personal informàtic
+És el conjunt de persones que desenvolupen diferents funcions relacionades amb la utilització dels ordinadors en una empresa. Controlen i manipulen les màquines perquè donin el servei adequat als usuaris.
+
+Es poden dividir en dos grups:
+
+* Administració del sistema: assegurar el bon funcionament del sistema informàtic i la xarxa (hardware).
+* Desenvolupament d'aplicacions: crea i manté aplicacions informàtiques (software).
   
   
-### Classificació dels sistemes operatius
-  
+## Classificació dels sistemes operatius
+
   
 #### Segons la utilització dels recursos
 Monotasca: només pot executar una tasca.
