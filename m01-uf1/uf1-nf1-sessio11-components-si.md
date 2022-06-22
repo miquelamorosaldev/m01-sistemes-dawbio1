@@ -97,7 +97,7 @@ Amb el terminal dels sistemes operatius (shell de Linux bash, Powershell de Wind
   per a fer operacions d'organitzar el disc dur i el sistema operatiu.
 
 ## Part humana d'un sistema informàtic (usuàries)
-  
+
 És la persona que utilitza la informàtica com a eina per a desenvolupar el seu treball o com a ajuda en una activitat.
 
 Cal tenir uns coneixements informàtics bàsics i, particularment, tenir uns grans coneixements sobre el funcionament de l’aplicació informàtica que està utilitzant.

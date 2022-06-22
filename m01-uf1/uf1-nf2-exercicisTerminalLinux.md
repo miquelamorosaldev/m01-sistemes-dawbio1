@@ -1,4 +1,4 @@
-# Introducció al terminal de Linux. Exercicis de comandaments bàsics.
+# M01-UF1-NF1-Introducció al terminal de Linux. Exercicis de comandaments bàsics.
 
 [Teoria Bloc 1: «Directoris, rutes, i creació de fitxers»](#teoria-bloc-1-directoris-rutes-i-creació-de-fitxers)
 
