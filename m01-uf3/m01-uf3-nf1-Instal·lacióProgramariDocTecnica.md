@@ -1,4 +1,4 @@
-**UF3/NF1 : Instal·lació i gestió del  programari bàsic i d'elaboració de la documentació tècnica**
+# UF3/NF1 : Instal·lació i gestió del  programari bàsic i d'elaboració de la documentació tècnica
 
 **Objectius generals**
 
@@ -36,43 +36,43 @@ En la taula següent apareixen alguns paràmetres de ***dpkg**.*
 
 Amb **apt** podem realitzar les operacions mes comuns sobre paquets i/o programes des de la línia d’ordres en Linux.
 
-1) `    `apt list:
+- apt list:
 
 `	`lista todos los paqutes instalados
 
-1) apt search:
+- apt search:
 
 Es posible buscar patrones en la lista de paquetes.
 
-1) ` `apt show:
+- ` `apt show:
 
 ver información del paquete
 
-1) `  `apt remove:
+- `  `apt remove:
 
 quitar el paquete
 
-1) `  `apt install:
+- `  `apt install:
 
 instala el paquete
 
-1) `  `apt update:
+- `  `apt update:
 
 Revisa que los paquetes estan actualizados y es importante que esten lincados a un servidor, dentro de la carpte /apt/.
 
-1) `    `apt autoremove:
+-  `    `apt autoremove:
 
 Tambien elimina las dependencias del paquete, aunque este sea importante para otro programa.
 
-1) `    `apt upgrade:
+-  `    `apt upgrade:
 
 actualiza paquetes que el comando update a encontrado
 
-1) `    `apt full-upgrade:
+-  `    `apt full-upgrade:
 
 Elimina los paquetes antiguos si es necesario para realizar la actualización de los paquetes a sus ultimas versiones. Se utiliza una vez que tu distribucion termina el plazo de LTS  a la siguiente
 
-1) `    `apt edit-sources:
+-  `    `apt edit-sources:
 
 te permite editar el sources.list; que es donde se encuentran todos los programas y repositorios que coleccionan paquetes.
 
@@ -108,7 +108,21 @@ Finalment, és important destacar que des de fa uns anys Ubuntu i algunes versio
 
 És habitual que Apt i Snap coexisteixin en distribucions de Debian.
 
+### **4. AppImage.**
 
+És un paquet semblant a les aplicacions portables de Windows. Així que un programa amb AppImage no s'instal·la sinó que s'executa i no necessitarem utilitzar els permisos d'administrador. Per poder instal·lar AppImage només hem d'obrir la terminal i escriure el següent:
+
+chmod a+x paquet.AppImage
+./paquet.AppImage
+
+<a href="https://ubunlog.com/instalar-paquete-appimage-ubuntu/">https://ubunlog.com/instalar-paquete-appimage-ubuntu/</a>
+
+
+### **5. Altres alternatives.**
+
+* Pacman, per a distribucions d’arch-Linux i Manjaro, que cada cop són més usades per les versions oficials per les comunitats.
+
+* AUR, repositori comunitari (tipus Git) per a penjar.
 
 <hr/>
 
