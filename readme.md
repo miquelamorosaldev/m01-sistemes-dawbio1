@@ -6,8 +6,15 @@
 ### NF2.- Instal·lació i configuració de sistemes operatius
 
 Pt2 - Màquines virtuals.
+
 A03 - Introducció al terminal.
+
 Pt3 - Comandes de processos i usuaris
 
-NF3.- Introducció a les xarxes
+### NF3.- Introducció a les xarxes
 
+Pt4- Pràctica Introducció a les xarxes.
+
+## UF2 - Gestió de la informació i de recursos en una xarxa.
+
+## UF3 - Implantació de programari específic.
