@@ -43,7 +43,7 @@ S’hi inclouen els elements de programari, de maquinari i els éssers humans.
 el maquinari (CPU, memòria, discs durs, etc...), el programari, i com els usuaris hi interactuen.
 El diseny es basa en una estructura en capes.
 
-![Capes d'un Sistema Operatiu](https://github.com/miquelamorosaldev/m01-sistemes-dawbio-2122/blob/main/imgs-CapesSO.svg)
+![Capes d'un Sistema Operatiu](./img/imgs-CapesSO.svg)
 
 Les capes que conté un Sistema Operatiu són:
 - El nucli o Kernel.
