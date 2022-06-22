@@ -3,8 +3,6 @@
 ## UF1: Instal·lació, configuració i explotació del sistema informàtic
 
 ### NF1.- Introducció als sistemes d'informació
-
-
 ### NF2.- Instal·lació i configuració de sistemes operatius
 
 Pt2 - Màquines virtuals.
