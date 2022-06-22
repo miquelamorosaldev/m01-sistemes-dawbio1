@@ -1,13 +1,6 @@
-﻿
-|**CFGS DAWBIO**|**PRÀCTICA**|**Maig 2021**|
-| :-: | :-: | :-: |
-|**UF3/NF1/PT1 : Instal·lació i gestió del  programari bàsic i d'elaboració de la documentació tècnica**|
-|<p>**M01 – SISTEMES INFORMÀTICS**</p><p>**UF3 – Implantació de programari específic**</p><p>**NF1 – Instal·lació de programari bàsic. Manuals d'ús per sistemes operatius i aplicacions**</p>|
+**UF3/NF1 : Instal·lació i gestió del  programari bàsic i d'elaboració de la documentació tècnica**
 
-
-||
-| :- |
-**Objectius generals de la pràctica**
+**Objectius generals**
 
 - Utilitzar les eines d'administració per el manteniment de les aplicacions
 - Instal·lacions de noves aplicacions
@@ -16,7 +9,8 @@
 - Resolució de les dependències
 
 **Teoria**
-1. ### **1.1 DPKG i paquets de Debian**
+
+### **1. DPKG i paquets de Debian**
 La comanda encarregada de gestionar els paquets .deb (el format utilitzat per Debian i Ubuntu) és ***dpkg***. En aquest sentit, aquesta comanda és equivalent a la comanda ***rpm*** que es fa servir a la família Red Hat per gestionar els paquets .**rpm**.
 
 Això vol dir que ***dpkg*** tampoc és capaç d'instal·lar les dependències dels paquets si aquests no han sigut descarregades abans.
@@ -27,7 +21,6 @@ Per això necessitarem alguna altra eina (com per exemple, **apt-get**) funciona
 
 En la taula següent apareixen alguns paràmetres de ***dpkg**.*
 
-
 |**- i :**|instalar paquetes|
 | :- | :- |
 |**-r** :|eliminar paquetes instalados|
@@ -37,8 +30,7 @@ En la taula següent apareixen alguns paràmetres de ***dpkg**.*
 |**-s** :|Buscar dentro de los paquetes.|
 
 
-
-1. ### **Eina Apt/Apt-get.**
+### **2. Eina Apt/Apt-get.**
 
 **Apt** és una ordre per a instal·lar aplicacions en sistemes basats en debian o ubuntu, i gestionar automàticament les versions d’aquestas aplicacions (No confondre amb apt-get o apt-cache que realitzen funcions similars a apt).
 
@@ -96,8 +88,7 @@ Podem trobar respostes en aquest artícle.
 ***apt-get** sigue siendo soportada por la mayoría de las distros DEB (y por ese motivo muchos usuarios no ven motivación en aprender apt), y disponer de las dos herramientas. apt facilita algunas cosas, y apt-get sigue siendo muy útil para otras (ver las conclusiones abajo).*
 
 
-
-1. ### **Eina Snap.**
+### **3. Eina Snap.**
 
 Finalment, és important destacar que des de fa uns anys Ubuntu i algunes versions derivades (PopOs, Lubuntu, ...) també utilitzen un gestor de paquets (com Apt) anomenat Snap, ja que asseguren que és més eficient.
 
@@ -109,14 +100,17 @@ Finalment, és important destacar que des de fa uns anys Ubuntu i algunes versio
 
 [*https://snapcraft.io/install/netbeans/ubuntu*](https://snapcraft.io/install/netbeans/ubuntu)
 
-sudo apt update
+```sudo apt update```
 
-sudo apt install snapd
+```sudo apt install snapd```
 
-sudo snap install netbeans --classic
+```sudo snap install netbeans --classic```
 
 És habitual que Apt i Snap coexisteixin en distribucions de Debian.
 
+
+
+<hr/>
 
 **Desenvolupament de la pràctica**
 
