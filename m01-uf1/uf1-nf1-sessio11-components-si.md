@@ -66,7 +66,6 @@ Aquestes targetes solen realitzar funcions de control de perifèrics, com monito
 En resum, solen contenir:
 - Connector a la font d'alimentació.
 - Sòcols per a posar-hi una o més CPU.
-- Un o més ventiladors per evitar sobrescalfament
 - Ranures per a la memòria RAM.
 - Xipset: conté connectors als processadors, memòries, unitats d'emmagatzematge secundari (pex. disc dur i connectors USB), targetes gràfiques (GPU).
 
@@ -74,7 +73,7 @@ En resum, solen contenir:
 
 ## Part lògica d'un sistema informàtic (programari)
   
-El programari (software) és compost per tot allò que fem servir en el camp de la informàtica que no podem veure ni tocar.
+El programari (software) és compost per tot allò que fem servir en el camp de la informàtica que no podem veure ni tocar, però podem usar.
 
 <em>Exemples: jocs d’ordinadors, programes de comptabilitat, sistemes operatius, etc...</em>
 
