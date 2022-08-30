@@ -1,0 +1,18 @@
+Nom;Cognom;Ciutat;Telèfon;Edat;Email
+Cristina;Ouviña;Valencia;96123456;30;ouvina@esfuerzo.com
+Silvia;Domínguez;Salamanca;923294400;34;sdom@perfumerias.es
+Alba;Torrens;Ekaterinburgo;0073436898812;31;a.torrens@mvp.es
+Laia;Palau;Girona;972414114;41;laia@mestitolsqueanys.com
+Marta;Xargay;Barcelona;0034904221336;25;marta@hotmail.com
+Tamara;Abalde;Vitoria;945139291;32;mihermano@tambienjuega.es
+Aitana;Bonmati;Barcelona;003469482919;24;aitanabonmati@fcb.cat
+Queralt;Casas;Valencia;00346758410;28;queralt@cultura.es
+Maria;Conde Valencia;Kraków;0048531601710;22;conde@wisla.pl
+Nogaye;LoSylla;LaSeu;976379156;24;nogaye-losylla@feb.com
+Aida;Riko;Fujimaki;0000000000;32;seirin@manga.com
+Uliana;Semiónova;Getafe;918765432;39;tachenko@ijosomdelamateixaepoca.es
+Alexia;Putellas;Barcelona;0034654848419;28;alexiap@fcb.cat
+Claudia;Masip;Tarragona;0034652736471;18;claudia.masip@nastic.com
+Nora;Chaib;LHospitalet;003465736471;21;norachaib@uecornella.cat
+Sandra;Vericat;LHospitalet;00345574361;33;sandrav2udbellvitge.cat
+Jennifer;Hermoso;Barcelona;003495431336;27;jennihermoso@fcb.cat
