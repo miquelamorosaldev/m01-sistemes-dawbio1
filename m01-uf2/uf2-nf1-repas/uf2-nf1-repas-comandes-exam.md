@@ -1,6 +1,6 @@
-#uf2-nf1-repas-comandes-exam.md
+# Exercicis preparació Prova Escrita UF2 - NF1. Administració i configuració de la informació.
 
-**Part 1. Cerca de fitxers i directoris en un projecte**
+## Part 1. Cerca de fitxers i directoris en un projecte
 
 Clona el repositori «pt15-oestoporosi-javaweb» de github a la carpeta
 del teu directori d’usuari. 
