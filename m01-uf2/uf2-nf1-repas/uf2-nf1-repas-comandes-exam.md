@@ -52,10 +52,10 @@ Comprovació: fem find . -type f -size +100k | wc -l i veiem que ara el resultat
 
 **Tenim un llistat d’alumnes dins del fitxer jugadores.txt**
 
-Volem fer les següents consultes amb el terminal de Linux, abans de
-tractar un fitxer amb dades de pacients.
+Es tracta d'un fitxer separat per comes CSV, concretament tots els camps de cada fila separats per ';' 
+Volem fer les següents consultes amb el terminal de Linux, abans de tractar un fitxer amb dades de pacients.
 
-Comandes més comuns: cat, grep, awk, tail/head, tr, cut, sort, &gt;
+<em> Comandes més comuns: cat, grep, awk, tail/head, tr, cut, sort, < ; | </em>
 
 1. Mostra totes les jugadores de l'arxiu de Barcelona.
 
@@ -95,14 +95,17 @@ grep -E 'Hospitalet|Barcelona' jugadores.txt
 ```
 
 4. Posa en un fitxer anomenat jugadores\_equips.txt els registres de l'arxiu però només que continguin els camps "Nom", "1rCognom", "Ciutat” i "Edat". 
-
 Han de sortir ordenats per Nom.
-
+  
+```sh
+  cut -d ";" -f1,2,3,5 jugadores.txt | sort > jugadores_equips.txt
+```
+  
+  O bé:
+  
 ```sh
 awk -F ";" '{print $1";"$2";"$3";"$5}' jugadores.txt | sort > jugadores\_equips.txt
 ```
-
-O bé es pot fer amb el sort.
 
 5. Mostra tot l'arxiu en majúscules. 
 
@@ -110,9 +113,8 @@ O bé es pot fer amb el sort.
 **tr [lower][upper]**
 
 ```sh
-tr [lower][upper] jugadores.txt 
+cat jugadores.txt | tr [:lower:] [:upper:]
 ```
-
 
 O bé
 
@@ -138,13 +140,19 @@ Jennifer;Hermoso;Barcelona;003495431336;27;jennihermoso@fcb.cat
 ```sh
 awk -F ";"  '{if($5 < 25)counter++} END{print counter}' jugadores.txt 
 ```
+  
+O bé, si eliminem la fila de la capçalera.
+  
+```sh
+awk -F";" '{if($5<25) print $0}' jugadores.txt | wc -l
+```
 
 Resultat: 5
 
 8. Mostra el nom i cognom de les jugadores del Barça, les que tenen un correu electrònic que acaba en ‘fcb.cat’
 
-PISTA: 
-grep -E accepta expressions regulars.
+**PISTA: **
+**grep -E accepta expressions regulars.**
 
 ```sh
 cut cut -d ";" -f 1,2 jugadores.txt | grep -E *@fcb.cat 
