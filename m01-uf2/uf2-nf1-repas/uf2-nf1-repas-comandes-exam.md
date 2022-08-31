@@ -50,7 +50,7 @@ Comprovació: fem find . -type f -size +100k | wc -l i veiem que ara el resultat
 
 ## Part 2. Comandes de filtre d’un fitxer.
 
-**Tenim un llistat d’alumnes dins del fitxer jugadores.txt**
+**Tenim un llistat d’alumnes dins del fitxer [jugadores.txt](./jugadores.txt)**
 
 Es tracta d'un fitxer separat per comes CSV, concretament tots els camps de cada fila separats per ';' 
 Volem fer les següents consultes amb el terminal de Linux, abans de tractar un fitxer amb dades de pacients.
