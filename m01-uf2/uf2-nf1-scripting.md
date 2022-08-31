@@ -7,6 +7,7 @@ Aplicar les comandes més comuns del terminal de Linux i de Windows per a consul
 ## Exercicis.
 
 [Autoavaluació Inicial.](./uf2-autoav-ini.md)
+[Exercicis repàs, comandes de cerca directoris i filtre fitxers.](./uf2-autoav-ini.md)
 
 ## Resum comandes més útils
 
