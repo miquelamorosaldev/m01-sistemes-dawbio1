@@ -4,10 +4,11 @@
 
 Aplicar les comandes més comuns del terminal de Linux i de Windows per a consultar i transformar fitxers i carpetes.
   
-## Exercicis.
+## Apunts i Exercicis.
 
-[Autoavaluació Inicial.](./uf2-autoav-ini.md)
-[Exercicis repàs, comandes de cerca directoris i filtre fitxers.](./uf2-autoav-ini.md)
+1. [Autoavaluació Inicial.](./uf2-autoav-ini.md)
+2. [Exercicis repàs, comandes de cerca directoris i filtre fitxers.](./uf2-nf1-repas/uf2-nf1-repas-comandes-exam.md)
+
 
 ## Resum comandes més útils
 
