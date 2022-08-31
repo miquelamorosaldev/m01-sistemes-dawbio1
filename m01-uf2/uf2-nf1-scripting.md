@@ -6,7 +6,7 @@ Aplicar les comandes més comuns del terminal de Linux i de Windows per a consul
   
 ## Exercicis.
 
-[./uf-autoav-ini.md](Autoavaluació Inicial.)
+[Autoavaluació Inicial.](./uf2-autoav-ini.md)
 
 ## Resum comandes més útils
 
@@ -16,17 +16,21 @@ Llista els fitxers i directoris
 Sintàxis:
 ls -<paràmetres> -ruta
 
-Paràmetres comuns:
-**-l** Format llarg
-**-a** Fitxers ocults
-**-s** Mostra espai que ocupa cada fitxer i carpeta.
+**Paràmetres comuns:**
+
+1.**-l** Format llarg
+
+2.**-a** Fitxers ocults
+
+3.**-s** Mostra espai que ocupa cada fitxer i carpeta.
+
 
 Es poden combinar:
 ```sh
 ls -las
 ```
 
-[https://pc-solucion.es/unidad/comando-ls/](Exemples de ls amb diversos paràmetres.)
+[Exemples de ls amb diversos paràmetres.](https://pc-solucion.es/unidad/comando-ls/)
 
 **sort**
 Ordena alfabèticament o numèricament una llista de fitxers
