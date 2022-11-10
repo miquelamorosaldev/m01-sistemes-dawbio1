@@ -63,18 +63,20 @@ Tant a Linux com a Windows, per defecte la carpeta de cada usuari conté altres 
 Desktop, Music, Documents, Downloads, etc...
 
 
-#### Comanda cd.
+#### Comanda cd (change directory)
 
 Ens serveix per moure'ns per les diferents carpetes del sistema.
 
+```console
 cd <carpeta>		accedeix a la carpeta interior si existeix
 cd ..			ves a la carpeta anterior (carpeta pare)
 cd .			La carpeta actual.
 cd ../../..		ves a 3 carpetes anteriors
 cd <ruta_absoluta> 	Pots posar rutes absolutes (rutes que comencen des del root; si existeix, anirà directament a la carpeta)
 cd ~			Ens dirigeix automàticament a la carpeta home de l'usuari actiu.
-	
-Exemple ruta absoluta.
+```
+
+##### Exemple ruta absoluta.
 
 ```console
 usuari1@popos22:~$ cd /alumne/home/Documents/dadescovid-10122021.csv
@@ -98,17 +100,26 @@ usuari1@popos22:~$ pwd
 #### Comanda ls
 Serveix per llistar fitxers i carpetes.
 
-ls			Llista fitxers i carpetes
-ls -l			Llista fitxers i carpetes, format llarg (permisos, tamany...)
+```console 
+ls	# Llista fitxers i carpetes		
+ls -l	# Llista fitxers i carpetes, format llarg (permisos, tamany...)
+```
 
 Altres combinacions:
-ls -a  Llista fitxers i carpetes, incloent els ocults.
+
+```console 
+ls -a 
+```
+Llista fitxers i carpetes, incloent els ocults.
 
 Ls admet molts paràmetres alhora:
 
-ls -la  Llista fitxers i carpetes, format llarg (permisos, tamany...), incloent els ocults.
-
-I la comanda més potent i completa:
+```console
+ls -la 
+```
+Llista fitxers i carpetes, format llarg (permisos, tamany...), incloent els ocults.
+ 
+<strong>I la comanda més potent i completa:</strong>
 
 ```console 
 ls -lisah
@@ -124,11 +135,13 @@ El cd també funciona a MS-DOS (terminal de Windows).
 Tanmateix, moltes comandes a Windows són diferents (per exemple. L’ls de Linux és dir amb Windows), i moltes d’altres ni existeixen.
 Per a tenir una shell tant avançada com la de Unix i GNU/Linux cal instal.lar extensions com PowerShell; i ni tan sols així s'aconsegueixen 
 tantes prestancions com amb Linux.
-Una altra opció per gaudir de Linux a Windows, disponible a partir de Windows, és instal.lar l'WSL (Windows Subsystem for Linux)
+
+Una altra opció per gaudir de Linux a Windows, disponible a partir de Windows, és instal.lar l'WSL (Windows Subsystem for Linux) si som administradors/es.
 
 ---
 	
 ## Exercicis Bloc 1 - «Directoris, rutes, i creació de fitxers»
+
 Escriu la o les comandes necessàries per cada cas:
 
     1. Situa't al teu directori home.
@@ -140,7 +153,6 @@ Escriu la o les comandes necessàries per cada cas:
     4. Llista els fitxers del directori actual, inclosos els ocults.
 	
     5. Llista els fitxers del directori arrel, sense canviar de directori.
-
 
     6. Situa't al directori arrel, llista els fitxers i torna al teu directori home.
 
@@ -161,24 +173,61 @@ Escriu la o les comandes necessàries per cada cas:
         ◦ Utilitzant una ruta relativa, amb el directori actual.
         ◦ Utilitzant una ruta absoluta.
           
+### Solucions Bloc 1:
+
+1	~
+
+2	pwd
+
+3	ls
+
+4	ls -a, ls --al, ls -lisah
+
+5	ls /
+
+6	cd /, ls, cd
+
+7	mkdir practica
+
+8	touch practica/test1.txt
+
+9	nano practica/test1.txt
+
+10	nano /home/alumne/practica/test1.txt
+
+11	cat practica/test1.txt
+
+12	cat /home/alumne/practica/test1.txt
+
+13	cat test1.txt, cat ./test1.txt, cat /home/alumne/practica/test1.txt
+
+
 
 ## Bloc 2: «Gestió de fitxers»
 
 <em> Comandaments: cat, cp, ls, mkdir, mv, nano, rm. </em>
 
 Tipus de sortida del terminal: 
+
 per defecte les comandes surten per consola
 ```console
 	ls -l
 ```
 
 Si fiquem > després de la comanda i el nom d’un fitxer, posem la sortida en un fitxer
-	ls -l > fitxesCarpeta.txt
+```console
+   ls -l > fitxesCarpeta.txt
+```
 
 Si posem >> després de la comanda i el nom d’un fitxer, posem la sortida en un fitxer d’error.
-	ls -l >> fitxesError.txt
+```console
+   ls -l >> fitxesError.txt
+```
+
+## Exercicis Bloc 2:
 
 Escriu la o les comandes necessàries per cada cas, sense moure't del teu directori home:
+
     1. Fes una còpia de "test1.txt" i deixa-la al directori "practica".
 	
     2. Mou "test2.txt" al teu directori home.
@@ -204,6 +253,36 @@ Escriu la o les comandes necessàries per cada cas, sense moure't del teu direct
     12. Fes una còpia oculta del directori "secrets" que es digui "copia-seguretat" dins de "practica".
 	
     13. Llista els fitxers del directori "copia-seguretat", inclosos els ocults.
-	
+
+
+### Solucions Exercicis Bloc 2:
+
+```bash
+1	cp practica/test1.txt practica/test2.txt
+
+2	mv practica/test2.txt ~
+
+3	mv test2.txt diari.txt
+
+4	mv diari.txt .diari.txt
+
+5	nano .diari.txt
+
+6	cat .diari.txt
+
+7	mkdir practica/.secrets
+
+8	ls -a practica
+
+9	cp .diari.txt practica/.secrets
+
+10	cat practica/.secrets/.diari.txt
+
+11	rm .diari.txt
+
+12	cp -r practica/.secrets/ practica/.copia-seguritat
+
+13	ls -a practica/.copia-seguritat/
+```
 
 
