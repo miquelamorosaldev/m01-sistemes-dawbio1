@@ -12,7 +12,7 @@ Pt2 - Màquines virtuals.
 
 #### [A032 - Comandes de processos i usuaris](./m01-uf1/uf1-nf2-pt3-introprocessos.md)
 
-### [PT31 - Pràctica processos ] https://github.com/miquelamorosaldev/m01-sistemes-dawbio-2122/tree/main/m01-uf1/practica3
+### [PT31 - Pràctica processos](https://github.com/miquelamorosaldev/m01-sistemes-dawbio-2122/tree/main/m01-uf1/practica3)
 
 
 #### A0321 - Crear un script com a procés.
