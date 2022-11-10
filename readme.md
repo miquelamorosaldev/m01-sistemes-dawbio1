@@ -3,13 +3,17 @@
 ## UF1: Instal·lació, configuració i explotació del sistema informàtic
 
 ### [NF1.- Introducció als sistemes d'informació](./m01-uf1/uf1-nf1-sessio11-components-si.md)
+
 ### NF2.- Instal·lació i configuració de sistemes operatius
 
 Pt2 - Màquines virtuals.
 
-### [A03 - Introducció al terminal.](./m01-uf1/uf1-nf2-exercicisTerminalLinux.md)
+#### [A031 - Introducció al terminal de Linux (cd,ls,pwd,...)](./m01-uf1/uf1-nf2-exercicisTerminalLinux.md)
 
-Pt3 - Comandes de processos i usuaris
+#### [Pt3 - Comandes de processos i usuaris](./m01-uf1/uf1-nf2-pt3-introprocessos.md)
+
+#### A0311 - Crear un script com a procés.
+
 
 ### NF3.- Introducció a les xarxes
 
