@@ -26,4 +26,6 @@ Pt4- Pràctica Introducció a les xarxes.
 
 ### [NF1.- Introducció als sistemes d'informació, repàs comandes](./m01-uf2/uf2-nf1-scripting.md)
 
+### [Scripts bàsics](https://github.com/miquelamorosaldev/m01-sistemes-dawbio-2122/tree/main/m01-uf2/scripts)
+
 ## UF3 - Implantació de programari específic.
