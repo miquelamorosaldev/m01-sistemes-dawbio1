@@ -10,7 +10,7 @@ Pt2 - Màquines virtuals.
 
 #### [A031 - Introducció al terminal de Linux (cd,ls,pwd,...)](./m01-uf1/uf1-nf2-exercicisTerminalLinux.md)
 
-#### [A032 - Comandes de processos i usuaris](./m01-uf1/uf1-nf2-pt3-introprocessos.md)
+#### [A032 - Comandes de processos](./m01-uf1/uf1-nf2-pt3-introprocessos.md)
 
 ### [PT31 - Pràctica processos](https://github.com/miquelamorosaldev/m01-sistemes-dawbio-2122/tree/main/m01-uf1/practica3)
 
