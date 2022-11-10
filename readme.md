@@ -23,6 +23,7 @@ Pt2 - Màquines virtuals.
 Pt4- Pràctica Introducció a les xarxes.
 
 ## UF2 - Gestió de la informació i de recursos en una xarxa.
-### [NF1.- Introducció als sistemes d'informació](./m01-uf2/uf2-nf1-scripting.md)
+
+### [NF1.- Introducció als sistemes d'informació, repàs comandes](./m01-uf2/uf2-nf1-scripting.md)
 
 ## UF3 - Implantació de programari específic.
