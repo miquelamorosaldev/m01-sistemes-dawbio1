@@ -10,9 +10,12 @@ Pt2 - Màquines virtuals.
 
 #### [A031 - Introducció al terminal de Linux (cd,ls,pwd,...)](./m01-uf1/uf1-nf2-exercicisTerminalLinux.md)
 
-#### [Pt3 - Comandes de processos i usuaris](./m01-uf1/uf1-nf2-pt3-introprocessos.md)
+#### [A032 - Comandes de processos i usuaris](./m01-uf1/uf1-nf2-pt3-introprocessos.md)
 
-#### A0311 - Crear un script com a procés.
+### [PT31 - Pràctica processos ] https://github.com/miquelamorosaldev/m01-sistemes-dawbio-2122/tree/main/m01-uf1/practica3
+
+
+#### A0321 - Crear un script com a procés.
 
 
 ### NF3.- Introducció a les xarxes
