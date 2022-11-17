@@ -243,6 +243,84 @@ Sí, opcions:
     pkill 5084
 
 
+## 7. Xifres número pi
+
+100 xifres, molt ràpid:
+    
+```bash
+    time echo scale="100; 4*a(1)" | bc -l
+```
+    
+4500 xifres, més lent:
+
+```bash
+time echo scale="4500; 4*a(1)" | bc -l &
+
+time echo scale="4500; 4*a(1)" | bc -l &
+``` 
+    
+### 7a. Des del terminal, arrenca   2 processos (p1 i p2) que generen les primeres 5000 i 8000 xifres del número pi en segon pla. 
+    
+El  codi del procés és:   
+    
+```bash
+time echo scale="4500; 4*a(1)" | bc -l &                
+```
+
+Ves amb compte amb les comes, no són iguals a Linux.         
+
+#### Solució
+
+```bash
+time echo scale="4500; 4*a(1)" | bc -l &                
+
+time echo scale="4500; 4*a(1)" | bc -l &                
+```
+    
+    
+### 7b. Ara,  executa en segon pla el procés de la calculadora (gnome-calculator)         
+
+```bash
+gnome-calculator &
+```
+    
+###  7c.
+Mostra  per pantalla els PID dels processos                           
+
+```bash
+jobs -l
+```
+    
+```bash
+miquelamoros@pop-os:~$ time echo scale="4500; 4*a(1)" | bc -l &
+[1] 4632
+miquelamoros@pop-os:~$ time echo scale="4500; 4*a(1)" | bc -l &
+[2] 4635
+miquelamoros@pop-os:~$ gnome-calculator &
+[3] 4639
+miquelamoros@pop-os:~$ jobs -l
+[1]   4632 Ejecutando              time echo scale="4500; 4*a(1)" | bc -l &
+[2]-  4635 Ejecutando              time echo scale="4500; 4*a(1)" | bc -l &
+[3]+  4639 Ejecutando              gnome-calculator &
+```
+
+###  7d. Observa  els temps d’execució de  cadascun d'ells.                                           
+
+p1
+
+real        1m57,279s
+user        0m55,034s
+sys        0m0,072s
+
+p2
+real        1m56,910s
+user        0m55,052s
+sys        0m0,044s
+
+### Enhorabona, has completat tota la pràctica :)
+    
+    
+   
 #### Opcional: Si tenéis curiosidad:
 [https://www.hostinger.es/tutoriales/bash-script-linux]
 
