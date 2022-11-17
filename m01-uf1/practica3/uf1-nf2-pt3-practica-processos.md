@@ -319,12 +319,11 @@ sys        0m0,044s
 
 ### Enhorabona, has completat tota la pràctica :)
     
-    
    
 #### Opcional: Si tenéis curiosidad:
-[https://www.hostinger.es/tutoriales/bash-script-linux]
+    <a href="https://www.hostinger.es/tutoriales/bash-script-linux">Scripts Linux</a>
 
 Video software lliure, Stallman:
-    [https://www.youtube.com/watch?v=8SdPLG-_wtA]
+    <a href="https://www.youtube.com/watch?v=8SdPLG-_wtA">Software lliure, Stallman</a>
 
 
