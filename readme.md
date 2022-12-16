@@ -14,9 +14,9 @@ Pt2 - Màquines virtuals.
 
 ### [PT31 - Pràctica processos](https://github.com/miquelamorosaldev/m01-sistemes-dawbio-2122/tree/main/m01-uf1/practica3)
 
+#### [A033 - Comandes de gestió d'usuaris](./m01-uf1/uf1-nf2-pt32-gestiousuaris.md)
 
 #### A0321 - Crear un script com a procés.
-
 
 ### NF3.- Introducció a les xarxes
 
