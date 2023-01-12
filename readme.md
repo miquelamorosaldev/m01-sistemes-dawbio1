@@ -20,6 +20,10 @@ Pt2 - Màquines virtuals.
 
 ### NF3.- Introducció a les xarxes
 
+#### A041 - Comandes habituals per operar amb xarxes.
+
+#### A042 - Comandes per filtrar IP's d'un fitxer CSV.
+
 Pt4- Pràctica Introducció a les xarxes.
 
 ## UF2 - Gestió de la informació i de recursos en una xarxa.
