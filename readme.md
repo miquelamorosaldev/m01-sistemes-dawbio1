@@ -20,7 +20,7 @@ Pt2 - Màquines virtuals.
 
 ### NF3.- Introducció a les xarxes
 
-#### A041 - Comandes habituals per operar amb xarxes.
+#### [A041 - Comandes habituals per operar amb xarxes.]((./m01-uf1/nf3-pt4-xarxes.md)
 
 #### A042 - Comandes per filtrar IP's d'un fitxer CSV.
 
