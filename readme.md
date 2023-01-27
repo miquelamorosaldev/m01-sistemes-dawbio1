@@ -34,7 +34,7 @@ Pt4- Pràctica Introducció a les xarxes.
 
 ### [Repàs comandes de filtre i cerca](./m01-uf2/repascomandes.md)
 
-### [Teoria i exemples expressions regulars](./m01-uf2/intro-regexps/readme.md)
+### [Teoria i exemples expressions regulars](./m01-uf2/intro-regexps2/readme.md)
 
 ### [Execució i creació scripts bàsics](https://github.com/miquelamorosaldev/m01-sistemes-dawbio-2122/tree/main/m01-uf2/scripts)
 
