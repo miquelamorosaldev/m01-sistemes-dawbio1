@@ -8,6 +8,8 @@
 
 Pt2 - Màquines virtuals.
 
+
+
 #### [A031 - Introducció al terminal de Linux (cd,ls,pwd,...)](./m01-uf1/uf1-nf2-exercicisTerminalLinux.md)
 
 #### [A032 - Comandes de processos](./m01-uf1/uf1-nf2-pt3-introprocessos.md)
@@ -16,7 +18,7 @@ Pt2 - Màquines virtuals.
 
 #### [A033 - Comandes de gestió d'usuaris](./m01-uf1/uf1-nf2-pt32-gestiousuaris.md)
 
-#### A0321 - Crear un script com a procés.
+<strike>#### A0321 - Crear un script com a procés.</strike>
 
 ### NF3.- Introducció a les xarxes
 
@@ -28,8 +30,12 @@ Pt4- Pràctica Introducció a les xarxes.
 
 ## UF2 - Gestió de la informació i de recursos en una xarxa.
 
-### [NF1.- Introducció als sistemes d'informació, repàs comandes](./m01-uf2/uf2-nf1-scripting.md)
+### NF1.- Introducció als sistemes d'informació, repàs comandes de filtre i cerca
 
-### [Scripts bàsics](https://github.com/miquelamorosaldev/m01-sistemes-dawbio-2122/tree/main/m01-uf2/scripts)
+### [Repàs comandes de filtre i cerca](./m01-uf2/repascomandes.md)
+
+### [Teoria i exemples expressions regulars](./m01-uf2/intro-regexps/readme.md)
+
+### [Execució i creació scripts bàsics](https://github.com/miquelamorosaldev/m01-sistemes-dawbio-2122/tree/main/m01-uf2/scripts)
 
 ## UF3 - Implantació de programari específic.
