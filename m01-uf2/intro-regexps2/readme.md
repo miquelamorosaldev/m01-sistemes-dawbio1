@@ -304,12 +304,28 @@ Son caràcters especials que no consumeixen entrada i serveixen per indicar una 
   
     - \b: Principi a final de paraula \s\w o \w\s
 
-
 Un paràmetre controla si la llibreria treballa linea a linea o tot el text de cop.
 
 Quant es treballa linea a linea, no es té en compte el salt de línea "\n".
 
+Quant es treballa linea a linea, no es té en compte el salt de línea "\n".
+
+![[anchorsexample1.png]](./img/anchorsexample1.png "anchorsexample1.png")
+
 ![[anchorexample2.png]](./img/anchorexample2.png "anchorexample2.png")
+
+**EXEMPLE, LECTURA FASTA**
+
+**Rgx:**
+^>
+
+**Txt:**
+>Fasta demo 1
+AGCGATCGT
+
+**Núm Matches ? **
+1
+
 
 Si es treballa amb multiline, sol troba una ocurrencia
 
