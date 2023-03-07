@@ -6,7 +6,7 @@ Podem usar mètodes de Python (in), però en ocasions ens ofereixen molta més f
 
 Les expressions regulars són un llenguatge per expressar patrons. És a dir, una estructura que es repeteix entre 0 i n vegades.
 
-En altres paraules, serveixen per buscar coincidències (matches) en un text.
+<strong><em>En altres paraules, serveixen per buscar coincidències (matches) en un text.</em></strong>
 
 Per exemple, si un text té format de DNI/NIE, email, etc...
 
@@ -339,6 +339,136 @@ Flags Paràmetres de la llibreria de regexps.
 
 <hr/>
 <hr/>
+
+
+## Voleu jugar i aprendre ? Regex Play.
+
+T'ajuda a resoldre problemes de la vida real: filtrar MAC's, adreces ftp, etc...
+
+Abans de jugar et fa resoldre una petita enquesta.
+
+![[regular_expressions.png]](./img/regular_expressions.png "regular_expressions.png")
+Source: [xkcd](https://xkcd.com/208/)
+
+http://play.inginf.units.it/#/level/1
+
+
+<details>
+  <summary>Si teniu dubtes, cliqueu per veure les solucions</summary>
+  
+Ex2.
+
+### ([0-9a-f][0-9a-f]:?){6}
+
+Per seleccionar les adreces MAC, optem per seleccionar 2 digits hexadecimals.
+[0-9a-f]{2}
+
+La MAC consta de 5 grups de 2 hexadecimals separats
+
+
+Ex3.
+
+### [a-z].*(FreeBSD.org/pub/FreeBSD/)
+
+### ftp://[^ ]{1,}
+### ftp://[\S]{1,}
+
+ftp seguit de 1 o més caràcters que no siguin un espai [^ ]
+
+Ex4. 
+
+### .{1,}?\$
+
+Això el que fa és trobar els símbols $
+
+Per aconseguir que el comportament de la regex .{1,} no sigui greedy i sigui lazy, posem un interrogant al costat. Això ho fem per a què pari just quan es compleix la condició i que no segueixi; la qual cosa en aquest exercici fa que la solució sigui més eficent.
+
+Eviteu els quantificadors de 0 a N com el * i {0,} si és possible.
+
+Un altre exemple:
+https://stackoverflow.com/questions/2301285/what-do-lazy-and-greedy-mean-in-the-context-of-regular-expressions
+
+Ex5. 
+
+Possibles solucions
+
+#### (([0-2]?[0-9]{2})\.){3}([0-2]?[0-9]{2})
+
+#### \d+\.\d+\.\d+\d\.+\d+
+
+#### (\d{1,3}\.)\d
+
+Ex6.
+
+#### href=(['"]).+?\1  = href=(['"]).{1,}?\1
+
+L'href l'obrim amb comes simples o dobles. 
+Després, capturarem qualsevol caràcter de forma lazy (sinó continuaria buscant i no seria correcte)
+fins arribar de nou a trobar ' o " (\1) que tanca l'href.
+
+Ex7.
+
+### http://[a-zA-Z0-9/_=?;.~&:-]*[a-zA-Z0-9/]
+
+### (http[^\s\<\>]{1,}[^\.\<\>\s=])
+### (http:\S{1,})(\d|\w|/)
+
+La segona i tercera segueixen la estratègia negativa.
+
+### http://[^ >]+[\w/]
+
+Ex8. 
+
+### (<h\d\s?).+(</h\d>)
+
+### <h.*>
+### <h.*
+### <h\d.*>
+
+Com funcionen aquestes tan curtes ?
+
+. -> Agafa qualsevol caràcter excepte salts de línia
+
+Versió optimitzada amb back references '\1' i lazy quantifier (més eficient) '.*?'
+
+### <(h\d).*?</\1>
+
+
+Ex9.
+
+### \(?\d{3}[.)/]?[-\s]?\d{3}[.-]\d{4}
+
+General, la més interessant.
+
+### \(734\) \d{3}[\s\W]\d{3,4}|734.\d{3}.\d{3,4}|800.\d{3}-\d{3,4}
+
+Molt específica.
+
+</details>
+
+## Estratègies per resoldre problemes regex.
+
+1. Constructiva positiva
+   
+Posant els literals i caràcters especials que han d'encaixar. 
+
+2. Construcció negativa.
+   
+Dient el que no té que encaixar (amb character class)
+
+3. Destructiva
+
+Consisteix en eliminar els trossos de text que no ens interessen.
+
+Per exemple, eliminar la primera línia d'un fitxer .fasta
+
+4. Agrupació
+
+Usar operadors d'agrupació ( ) com hem fet en algunes solucions.
+
+<hr/>
+<hr/>
+
 
 ### Finalment, regla d'or:
 
