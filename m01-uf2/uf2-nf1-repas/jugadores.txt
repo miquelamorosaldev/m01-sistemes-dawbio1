@@ -15,4 +15,5 @@ Alexia;Putellas;Barcelona;0034654848419;28;alexiap@fcb.cat
 Claudia;Masip;Tarragona;0034652736471;18;claudia.masip@nastic.com
 Nora;Chaib;LHospitalet;003465736471;21;norachaib@uecornella.cat
 Sandra;Vericat;LHospitalet;00345574361;33;sandrav2udbellvitge.cat
-Jennifer;Hermoso;Barcelona;003495431336;27;jennihermoso@fcb.cat
+Jennifer;Hermoso;Barcelona;003495431336;27;jennihermoso@fcb.es
+Danae;Boronat;Barcelona;0000000000;41;danae.boronat@fcb.cat
