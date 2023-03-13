@@ -32,7 +32,7 @@ Pt4- Pràctica Introducció a les xarxes.
 
 ### NF1.- Introducció als sistemes d'informació, repàs comandes de filtre i cerca
 
-### [Repàs comandes de filtre i cerca](./m01-uf2/repascomandes.md)
+### [Repàs comandes de filtre i cerca](./m01-uf2/uf2-nf1-repas/uf2-nf1-repas-comandes-exam.md)
 
 ### [Teoria i exemples expressions regulars](./m01-uf2/intro-regexps2/readme.md)
 
