@@ -4,7 +4,7 @@
 
 Per a crear el teu script amb la shell de Linux.
 
-1. Crea el fitxer hacking.sh amb un editor com nano o gedit amb extebsió sh
+1. Crea el fitxer hacking.sh amb un editor com nano o gedit amb extensió sh
 
 ```sh
 !/bin/bash
