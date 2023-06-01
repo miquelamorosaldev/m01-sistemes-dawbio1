@@ -1,6 +1,8 @@
 ## Introducció a les xarxes.
 
-### Comandes 
+### Comandes bàsiques.
+
+<em>Nota: Són comandes per a Linux. ping és la única que serveix per tots els SO (Windows/Linux/Mac)</em>
 
 1. Tinc ip assignada?
  
@@ -47,7 +49,17 @@ netstat -an | grep 'LISTEN'
 
 cat /etc/hosts
 
+9. Quina IP tinc ? 
 
-### Comandes per filtrar fitxers CSV amb IP's.
+A Linux
+ifconfig
 
-Pròximament.
+A Windows
+ipconfig
+
+10. Alguna comanda no va a Ubuntu. Com ho faig?
+
+sudo apt update
+
+sudo apt -y install net-tools
+
