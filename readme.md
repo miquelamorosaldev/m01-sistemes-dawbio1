@@ -17,7 +17,7 @@
 
 #### [A033 - Comandes de gestió d'usuaris](./m01-uf1/uf1-nf2-pt32-gestiousuaris.md)
 
-<strike>#### A0321 - Crear un script com a procés.</strike>
+#### [A0321 - Crear un script com a procés.](./m01-uf1/practica3/uf1-nf2-pt3-practica-processos.md#6-script-com-a-proc%C3%A9s)
 
 ### NF3.- Introducció a les xarxes
 
