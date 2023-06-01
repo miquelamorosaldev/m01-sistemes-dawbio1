@@ -6,7 +6,6 @@
 
 ### NF2.- Instal·lació i configuració de sistemes operatius
 
-Pt2 - Màquines virtuals.
 
 
 
@@ -24,9 +23,10 @@ Pt2 - Màquines virtuals.
 
 #### [A041 - Comandes habituals per operar amb xarxes.](./m01-uf1/nf3-pt4-xarxes.md)
 
-#### A042 - Comandes per filtrar IP's d'un fitxer CSV.
+#### [A042 - Ús calculadora de subxarxes en problemes](.(m01-uf1/nf3-pt42-xarxes.md)
 
-Pt4- Pràctica Introducció a les xarxes.
+#### [A043 - Comandes per filtrar IP's d'un fitxer CSV](.(m01-uf1/nf3-pt43-xarxes.md)
+
 
 ## UF2 - Gestió de la informació i de recursos en una xarxa.
 
