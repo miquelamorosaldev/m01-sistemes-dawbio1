@@ -10,17 +10,17 @@ Per diversos motius, volen aprofitar aquesta IP per tot l'edifici i crear **4 su
 Tenen clar que el **número de hosts útils** que necessitaran en cada planta (subxarxa), serà com a màxim **45**.
 
 
-### Calcula la màscara de subxarxa adaptada (/25, /26 ...) 	
+### 1. Calcula la màscara de subxarxa adaptada (/25, /26 ...) 	
 
-### Omple la taula de subxarxes necessàries. 
+### 2. Omple la taula de subxarxes necessàries. 
 
 ### Un cop omplerta, respon:
 
- #### -> Quina és la adreça de broadcast de la 1a xarxa?
+ #### 3.1. Quina és la adreça de broadcast de la 1a xarxa?
  
- #### -> Quina  és la ip del 1r host de la 2a xarxa?
+ #### 3.2. Quina  és la ip del 1r host de la 2a xarxa?
  
- #### -> Quina és la ip de l’últim host de l’última xarxa?
+ #### 3.3. Quina és la ip de l’últim host de l’última xarxa?
  
  Per resoldre el problema pots utilitzar una <a href="https://www.site24x7.com/es/tools/ipv4-subredes-calculadora.html">calculadora online.</a>
 
@@ -56,16 +56,33 @@ Necessitem  24 bits per representar una IP de tipus C com la que tenim.
 
 Sabem que és tipus C perquè si traduïm a binari el 192 veiem que els 2 primers bits són 0.  
 
+### Omple la taula de subxarxes necessàries. 
 
-3. I a sota de tot ja tenim la taula de xarxes generada:
+3. La calculadora ens genera tota la taula de subxarxes.
 
-![fixedsubnet](../img/fixedsubnet.PNG)
+![fixedsubnet](./img/fixedsubnet.PNG)
 
+4. Tenint aquesta taula, podem respondre.
 
-**Subnet ID	    Subnet Address	  Host Address Range	              Broadcast Address**
-1	          192.168.10.0	      192.168.10.1 - 192.168.10.62	    192.168.10.63
-2	          192.168.10.64	      192.168.10.65 - 192.168.10.126	  192.168.10.127
-3	          192.168.10.128	    192.168.10.129 - 192.168.10.190	  192.168.10.191
-4	          192.168.10.192	    192.168.10.193 - 192.168.10.254	  192.168.10.255
- 		
+ #### 3.1. Quina és la adreça de broadcast de la segona xarxa?
+ 
+ 192.168.10.127
+ 
+ #### 3.2. Volem connectar una impressora 3D a la tercera IP de la tercera subxarxa, quina IP tindrà ? 
+ 
+ 192.168.10.129 és la primera IP de tercera subxarxa.
+ 
+Per tant, la **IP 3 = tercera** de la **subxarxa 3 = tercera** és **192.168.10.131**
+ 
+ #### 3.3. A la IP 192.168.10.195 hi ha connectat un servidor web. A quina subxarxa pertany ?  
+
+La **quarta = 4.**
+
+Podem veure que el rang d'IP's de la quarta subxarxa està entre:
+
+192.168.10.192 - 192.168.10.254
+
+A sota teniu un esquema que ho explica:
+
+![fixedsubnet](./img/fixedsubnet2.png)
 
