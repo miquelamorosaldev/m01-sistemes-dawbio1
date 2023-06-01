@@ -1,7 +1,5 @@
 # COMANDES DAWBIO1-M01-UF1. PT31. 
 
-#### DIES 03/11/2022, 07/11 I 10/11
-
 ## Consulta processos i CPU Windows.
 
 ### 1a. 
@@ -135,7 +133,8 @@ nano pt31-doc.txt
 :w
 :q
 
-### 33. 
+### 33.
+    
 cp -r pt31 Documentos/pt31-copia
 
 ### 33 y 34:
@@ -201,40 +200,54 @@ Ctrl + C
 
 ## 5. Arbre de processos Linux
 
+Si no el teniu instal·lat:
 sudo apt-get install psmisc
-
 
 pstree > processos.txt
 
 ## 6. Script com a procés.
 
 
-### Crea el següent script:
+### Crea el següent script, anomenat infinit.xh:
+
+```bash
+#!/bin/bash 
+while true
+do
+  echo "Només utilitzaré l'ordinador amb finalitats acadèmiques i professionals."
+  sleep 3
+done
+```
 
 
 ### 6a. Executa'l
 
-Opció 1
+Opció 1 (si no teniu permisos d'admin)
 
+```bash
 bash infinit.sh
-
+```
+    
 Opció 2
-
+    
+```bash
 chmod +x infinit.sh
-
 ./infinit.sh
+```
 
 ### 6b. Mira id procés
 
+```bash
 [1] 5084
-
 ./infinit.sh &
-
+```
+    
 ### 6c.
 
 Puc usar el terminal però el text apareix enmig.
 
 ### 6d.
+    
 Sí, opcions:
     
     kill %1
@@ -255,7 +268,6 @@ Sí, opcions:
 
 ```bash
 time echo scale="4500; 4*a(1)" | bc -l &
-
 time echo scale="4500; 4*a(1)" | bc -l &
 ``` 
     
@@ -278,7 +290,9 @@ time echo scale="4500; 4*a(1)" | bc -l &
 ```
     
     
-### 7b. Ara,  executa en segon pla el procés de la calculadora (gnome-calculator)         
+### 7b. Ara, executa en segon pla el procés de la calculadora (gnome-calculator)     
+    
+<em>Pista: Des de terminal, qualsevol procés que li posis el caràcter & al final s'executarà en segon pla.</em> 
 
 ```bash
 gnome-calculator &
@@ -322,7 +336,7 @@ sys        0m0,044s
    
 #### Opcional: 
     
- Si tenéis curiosidad:
+ Si teniu curiositat:
     <a href="https://www.hostinger.es/tutoriales/bash-script-linux">Scripts Linux</a>
 
 Video software lliure, Stallman:
