@@ -1,5 +1,9 @@
 ## Scripts bàsics en Linux i Windows.
 
+En aquesta secció teniu una mostra d'scripts senzills però molt útils.
+
+Abans que res, veiem com crear i executar scripts amb diversos SO.
+
 ### Linux (.sh)
 
 Per a crear el teu script amb la shell de Linux.
@@ -26,7 +30,7 @@ chmod +x hacking.sh
 
 ./hacking
 
-Una alternativa als passos 3 i 4, si no ets usuari amb permisos, és aquesta:
+Una alternativa als passos 3 i 4, si no ets un usuari amb permisos (no estàs al grup sudo), és aquesta:
 
 ```sh
 sh hacking.sh
@@ -36,7 +40,7 @@ sh hacking.sh
 
 Per a crear el teu script executable.
 
-1. Crea el fitxer antivirus.bat amb un editor com notepad o sublimetext
+1. Crea el fitxer antivirus.bat amb un editor com notepad (o sublimetext o VSCode):
 
 ```dos
 @echo off
