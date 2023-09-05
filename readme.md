@@ -6,7 +6,7 @@
 
 ### NF2.- Instal·lació i configuració de sistemes operatius
 
-#### [A02 - Activitat guiada d'instal·lació de la distribució de Linux PopOS! en una màquina virtual de VirtualBox ](./m01-uf1/m01-uf1/uf1-nf2-sessio2-install-popos-vbox.pdf)
+#### [A02 - Activitat guiada d'instal·lació de la distribució de Linux PopOS! en una màquina virtual de VirtualBox ](./m01-uf1/uf1-nf2-sessio2-install-popos-vbox.pdf)
 
 #### [PT31 - Pràctica processos](https://github.com/miquelamorosaldev/m01-sistemes-dawbio-2122/tree/main/m01-uf1/practica3)
 
