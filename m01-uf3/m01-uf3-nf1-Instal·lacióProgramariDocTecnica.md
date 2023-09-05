@@ -221,5 +221,4 @@ Per a què funcioni, quan entris a dosbox usa aquestes comandes.
 
 **monkey v i mo**
 
-*5.2 Fes captura de pantalla de la intro del joc (1 punt)*
-DAWBIO1 – M01 – Sistemes. Instal.lació progamari.	Pàgina 5
+**5.2 Fes captura de pantalla de la intro del joc (1 punt)**
