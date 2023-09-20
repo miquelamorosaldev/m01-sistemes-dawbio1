@@ -4,15 +4,11 @@
 
 # Bloc 0: Instal.lació programes.
 
-Prèviament, hem aplicat comandes per a instal.lar programes per a la nostra màquina virtual.
+Prèviament, per tal d'aconseguir configurar la nostra màquina virtual (Guest Additions) hem aplicat comandes per a instal.lar programes.
 Exemple:
-```console 
-sudo apt-get install gparted 
-```
-
-I per executar el programa instal.lat:
-```console 
-gparted
+```console
+sudo apt update
+sudo apt install build-essential dkms linux-headers-$(uname -r)
 ```
 
 Descomposem les parts de la comanda, per entendre-la:
@@ -21,17 +17,38 @@ Descomposem les parts de la comanda, per entendre-la:
 Alternativa: sudo su 
 - apt-get → gestor de paquets que usen distros de Linux basades en Debian: Ubuntu, PopOs...
 - install → Li diem al apt que volem instal.lar (altres opcions: update, upgrade, remove, purge...)
-- gparted → El nom del programa. Aquest és el que consulta particions.
+- build-essential dkms → El nom del programa. Aquest és el que consulta particions.
 
-### Exercici: Instal.la un programa.
+En aquest cas, s'instal·len molts programes alhora.
 
-Ens vindrà bé un editor: gedit i/o nano; així com utilitats com: tree, htop
+### Exercici: Instal.la un programa amb la comanda apt install.
 
-Posa les 2 comandes per instal.lar i executar un dels programes.
+Ens vindrà bé un editor de terminal: 
+
+- nano
+- inxi
+- tree
+- htop
+
+Per executar el programa instal.lat posa el seu nom:
+```console 
+inxi
+```
 
 ---
 
 ## Teoria Bloc 1: «Directoris, rutes, i creació de fitxers»
+
+Abans de començar, cal entendre com funciona la estructura de directoris que hi ha en una partició d'un disc amb Linux.
+
+![Parts Placa Base](./img/arbre-directoris-linux.png)
+
+Fixeu-vos que els usuaris es troben dins de la carpeta **/home/**
+
+També, que no hi ha lletres d'unitats com C: D: E: A: sinó que el contingut està repartit, a les carpetes **/dev/** de devices.
+
+Els dispositius extraibles (pendrives, ISO's ...) es creen a la carpeta **/media/** en general.
+
 
 <em>Comandaments: cat, cd, ls, mkdir, nano, pwd, touch </em>
 
@@ -39,33 +56,43 @@ Abans de començar:
 
 Repassem la gestió de rutes de Linux i com funcionen les comanda cd, pwd i ls.
 
-#### Rutes dels sistemes operatius.
-Ens serveix per moure'ns per les diferents carpetes del sistema.
+### Rutes dels recursos dels sistemes operatius.
+
+Les rutes serveix per moure'ns per les diferents carpetes del sistema. 
 
 Carpetes especials:
-La carpeta arrel del sistema és root i es representa amb una barra 
+La carpeta arrel del sistema és root i es representa amb una barra:
+
 ```console
 /
 ```
 
 A diferència de Windows, que la carpeta arrel és:
+
 C:\
 
 O el nom de la unitat assignada.
 
 
 La carpeta de l'usari és la home, per defecte se situa a:
+
 ```console
-usuari1@popos22:~$ /<nom_usuari>/home
+usuari1@popos22:~$ /home/<nom_usuari>
+```
+
+```console
+miquel@popos22:~$ /home/miquel/Documents/dawbio-m01.txt
 ```
 
 Tant a Linux com a Windows, per defecte la carpeta de cada usuari conté altres carpetes:
 Desktop, Music, Documents, Downloads, etc...
 
 
-#### Comanda cd (change directory)
+## Comanda cd (change directory)
 
-Ens serveix per moure'ns per les diferents carpetes del sistema.
+Ens serveix per moure'ns per les diferents carpetes del sistema; li podem passar rutes absolutes (la ruta sencera) 
+
+o bé una ruta relativa (una ruta que depèn del directori on ens trobem).
 
 ```console
 cd <carpeta>		accedeix a la carpeta interior si existeix
@@ -79,10 +106,11 @@ cd ~			Ens dirigeix automàticament a la carpeta home de l'usuari actiu.
 ##### Exemple ruta absoluta.
 
 ```console
-usuari1@popos22:~$ cd /alumne/home/Documents/dadescovid-10122021.csv
+usuari1@popos22:~$ cd /home/alumne/Documents/dadescovid-10122021.csv
 ```
 
-Exemple ruta relativa.
+##### Exemple ruta relativa.
+
 ```console 
 usuari1@popos22:~$cd Documents/
 ```
@@ -90,7 +118,8 @@ usuari1@popos22:~$cd Documents/
 Per a què funcioni, dins la nostra carpeta ha d'existir una carpeta anomenada Documents.
 
 #### Comanda pwd.
-serveix per veure per pantalla a quina carpeta estem.
+
+serveix per veure per pantalla a quina carpeta estem; és important per assegurar-nos que fem bé la ruta relativa.
 	
 ```console 
 usuari1@popos22:~$ pwd
@@ -98,7 +127,8 @@ usuari1@popos22:~$ pwd
 ``` 
 	
 #### Comanda ls
-Serveix per llistar fitxers i carpetes.
+
+Serveix per llistar fitxers i carpetes, i tota la seva info.
 
 ```console 
 ls	# Llista fitxers i carpetes		
