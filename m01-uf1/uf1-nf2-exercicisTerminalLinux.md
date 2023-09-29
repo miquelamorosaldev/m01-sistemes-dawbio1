@@ -157,7 +157,39 @@ ls -lisah
 	
 [Explicació comanda ls -lisah](https://explainshell.com/explain?cmd=ls+-lisah)
 	
-	
+
+#### Més comandes:
+
+**mkdir <carpeta>**
+
+Crea una o més carpetes.
+
+És molt potent, permet crear moltes carpetes alhora:
+
+[https://www.ionos.es/digitalguide/servidores/configuracion/comando-mkdir-de-linux/#:~:text=El%20comando%20de%20Linux%20conocido,crear%20jerarqu%C3%ADas%20de%20carpetas%20complejas.]
+
+**touch <nom_fitxer>**
+
+Crea un fitxer buit. 
+
+També serveix per fer que canvii els permisos de modificació al dia i hora actuals (d'aquí el nom de tocar).
+
+**cat <nom_fitxer>**
+
+Visualitza el contingut d'un fitxer que només tingui text (no val per Writer/Word).
+
+**nano <nom_fitxer>**
+
+Editor de text del terminal.
+
+Per a guardar cal fer la combinació
+
+: w
+
+Per a sortir
+
+: q
+ 
 #### Curiositats del terminal: 
 	
 El cd també funciona a MS-DOS (terminal de Windows). 
@@ -171,6 +203,8 @@ Una altra opció per gaudir de Linux a Windows, disponible a partir de Windows, 
 ---
 	
 ## Exercicis Bloc 1 - «Directoris, rutes, i creació de fitxers»
+
+<em> Comandaments: cd, ls, pwd, cp, mkdir, cat, touch, nano. </em>
 
 Escriu la o les comandes necessàries per cada cas:
 
@@ -205,7 +239,7 @@ Escriu la o les comandes necessàries per cada cas:
           
 ### Solucions Bloc 1:
 
-1	~
+1	cd ~ o cd /home/<usuari>
 
 2	pwd
 
