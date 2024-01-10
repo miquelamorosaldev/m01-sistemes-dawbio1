@@ -4,21 +4,11 @@
 
 ### [NF1.- Introducció als sistemes d'informació](./m01-uf1/uf1-nf1-sessio11-components-si.md)
 
-### NF2.- Instal·lació i configuració de sistemes operatius
+### NF2, part 1.- Instal·lació i configuració de sistemes operatius
 
 #### [A02 - Activitat guiada d'instal·lació de la distribució de Linux PopOS! en una màquina virtual de VirtualBox ](./m01-uf1/uf1-nf2-sessio2-install-popos-vbox.pdf)
 
-#### [PT31 - Pràctica processos](https://github.com/miquelamorosaldev/m01-sistemes-dawbio-2122/tree/main/m01-uf1/practica3)
-
-#### [A031 - Introducció al terminal de Linux (cd,ls,pwd,...)](./m01-uf1/uf1-nf2-exercicisTerminalLinux.md)
-
-#### [A032 - Resum comandes de processos](./m01-uf1/uf1-nf2-pt3-introprocessos.md)
-
-### [PT31 - Pràctica processos](https://github.com/miquelamorosaldev/m01-sistemes-dawbio-2122/tree/main/m01-uf1/practica3)
-
-#### [A033 - Comandes de gestió d'usuaris](./m01-uf1/uf1-nf2-pt32-gestiousuaris.md)
-
-#### [A0321 - Crear un script com a procés.](./m01-uf1/practica3/uf1-nf2-pt3-practica-processos.md#6-script-com-a-proc%C3%A9s)
+#### [A022 - Introducció al terminal de Linux (cd,ls,pwd,...)](./m01-uf1/uf1-nf2-exercicisTerminalLinux.md)
 
 ### NF3.- Introducció a les xarxes
 
@@ -27,6 +17,18 @@
 #### [A042 - Ús calculadora de subxarxes en problemes](./m01-uf1/nf3-pt42-xarxes.md)
 
 <strike>#### [A043 - Comandes per filtrar IP's d'un fitxer CSV](./m01-uf1/nf3-pt43-xarxes.md)</strike>
+
+### NF2, part 1.- Instal·lació i configuració de sistemes operatius
+
+#### [A0311 - Resum comandes de processos](./m01-uf1/uf1-nf2-pt3-introprocessos.md)
+
+#### [A0312 - Crear un script com a procés.](./m01-uf1/practica3/uf1-nf2-pt3-practica-processos.md#6-script-com-a-proc%C3%A9s)
+
+#### [Exercicis gestió processos (2022-2023)](https://github.com/miquelamorosaldev/m01-sistemes-dawbio-2122/tree/main/m01-uf1/practica3)
+
+#### [A0321 - Comandes de gestió d'usuaris](./m01-uf1/uf1-nf2-pt32-gestiousuaris.md)
+
+#### [A033 - Experiment script creació massiva d'usuaris](./m01-uf1/uf1-nf2-pt33-creacio-massiva-usuaris.md)
 
 ## UF2 - Gestió de la informació i de recursos en una xarxa.
 
@@ -41,7 +43,6 @@
 ### NF2.- Administració avançada del sistema.
 
 ### NF3.- Gestió i administració de dominis
-
 
 ## UF3 - Implantació de programari específic.
 
