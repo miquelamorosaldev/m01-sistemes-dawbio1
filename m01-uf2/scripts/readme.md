@@ -6,9 +6,9 @@ Abans que res, veiem com crear i executar scripts amb diversos SO.
 
 ### Linux (.sh)
 
-Per a crear el teu script amb la shell de Linux.
+Per a crear el teu script amb la shell de Linux obre el terminal (cerca el programa que té una pantalla negre com a icona , o usa la drecera Ctrl+Alt+T)
 
-1. Crea el fitxer hacking.sh amb un editor com nano o gedit amb extensió sh
+1. Crea el fitxer hacking.sh amb un editor com nano o gedit, amb extensió sh.
 
 ```sh
 !/bin/bash
@@ -20,7 +20,7 @@ done
 echo "Hacking completed :)"
 ```
 
-3. Converteix-lo amb programa,  assignant permisos d'execució.
+3. Converteix-lo a programa,  assignant **permisos d'execució**.
 
 ```sh
 chmod +x hacking.sh
@@ -58,9 +58,11 @@ echo Metode 100% fiable. De res.
 PAUSE
 ```
 
-2. Ja pots fer doble clic al programa i exexutar-lo.
+És molt important que tingui la **extensió .bat** (de batch) o no funcionará.
 
-O des del terminal, que el pots trobar posant cmd al menú del logo de Windows.
+2. Ara, ja pots fer doble clic al programa i executar-lo.
+
+O bé entrar al terminal de Windows, que el pots trobar posant **cmd** al menú del logo de Windows.
 
 ```dos
 antivirus.bat
