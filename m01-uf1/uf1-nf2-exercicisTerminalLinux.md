@@ -1,34 +1,40 @@
-# M01-UF1-NF1-Introducció al terminal de Linux. Exercicis de comandaments bàsics.
-
-[Teoria Bloc 1: «Directoris, rutes, i creació de fitxers»](#teoria-bloc-1-directoris-rutes-i-creació-de-fitxers)
+# M01-UF1-NF1-Introducció al terminal de Linux. Comandes de rutes, de gestió de fitxers i directoris.
 
 # Bloc 0: Instal.lació programes.
 
-Prèviament, per tal d'aconseguir configurar la nostra màquina virtual (Guest Additions) hem aplicat comandes per a instal.lar programes.
-Exemple:
+Abans que res, hem d'obrir el terminal de Linux. La seva icona està representada per una pantalla negra en diverses distribucions (les basades en Debian o Ubuntu). També pots obrir-lo amb la combinació de tecles **Ctrl + Alt + T**
+
+El programari de Linux es pot gestionar amb programes gràfics (pex. Centre Software Ubuntu), però el més habitual és gestionar-lo des del terminal.
+
+Exemple, si volem instal·lar l'editor de text **nano**:
 ```console
 sudo apt update
-sudo apt install build-essential dkms linux-headers-$(uname -r)
+sudo apt install nano
 ```
 
 Descomposem les parts de la comanda, per entendre-la:
 
 - sudo → Comanda que permet executar com a usuari admin.
 Alternativa: sudo su 
-- apt-get → gestor de paquets que usen distros de Linux basades en Debian: Ubuntu, PopOs...
-- install → Li diem al apt que volem instal.lar (altres opcions: update, upgrade, remove, purge...)
-- build-essential dkms → El nom del programa. Aquest és el que consulta particions.
+- apt → gestor de paquets que usen distros de Linux basades en Debian: Ubuntu, Mint...
+- install → Li diem al apt que volem instal.lar (altres opcions: update, upgrade, autoremove, purge...)
+- nano → El nom del programa, és un editor de text del terminal.
 
 En aquest cas, s'instal·len molts programes alhora.
 
-### Exercici: Instal.la un programa amb la comanda apt install.
+### Exercici: Instal.la 2 programes més amb la comanda apt install.
 
-Ens vindrà bé un editor de terminal: 
-
+Útils:
 - nano
 - inxi
 - tree
 - htop
+- git
+
+Programes no tant útils però curiosos:
+- sl
+- oneko
+- cowsay
 
 Per executar el programa instal.lat posa el seu nom:
 ```console 
@@ -37,102 +43,105 @@ inxi
 
 ---
 
-## Teoria Bloc 1: «Directoris, rutes, i creació de fitxers»
+## Teoria Bloc 1: «Comandes de rutes (pwd, cd, ls) i ajuda»
 
-Abans de començar, cal entendre com funciona la estructura de directoris que hi ha en una partició d'un disc amb Linux.
+Abans de començar a moure'ns pel terminal, cal entendre com funciona la estructura de directoris que hi ha en una partició d'un disc amb Linux.
 
-![Parts Placa Base](./img/arbre-directoris-linux.png)
+### Estructura de directoris a Linux.
 
-Fixeu-vos que els usuaris es troben dins de la carpeta **/home/**
+![Funcions dels directoris a Linux](./img/arbre-directoris-linux.png)
 
-També, que no hi ha lletres d'unitats com C: D: E: A: sinó que el contingut està repartit, a les carpetes **/dev/** de devices.
+Fixeu-vos que els usuaris es troben dins del directori **/home/**
+
+També, que no hi ha lletres d'unitats com C: D: E: A: sinó que el contingut de les unitats està repartit, a les carpetes **/dev/** de devices.
 
 Els dispositius extraibles (pendrives, ISO's ...) es creen a la carpeta **/media/** en general.
 
+Sempre parlarem de directoris a Linux (però el concepte és el mateix que el de la carpeta).
 
-<em>Comandaments: cat, cd, ls, mkdir, nano, pwd, touch </em>
-
-Abans de començar: 
+### Comandaments de rutes (per moure'ns): cd, ls, pwd 
 
 Repassem la gestió de rutes de Linux i com funcionen les comanda cd, pwd i ls.
 
-### Rutes dels recursos dels sistemes operatius.
-
-Les rutes serveix per moure'ns per les diferents carpetes del sistema. 
+Les rutes serveix per moure'ns pels diferents directoris del sistema. 
 
 Carpetes especials:
-La carpeta arrel del sistema és root i es representa amb una barra:
+El directori arrel del sistema és root i es representa amb una barra:
 
 ```console
 /
 ```
 
 A diferència de Windows, que la carpeta arrel és:
-
 C:\
 
 O el nom de la unitat assignada.
 
 
-La carpeta de l'usari és la home, per defecte se situa a:
+El directori de l'usari és la **home**, per defecte se situa a:
 
 ```console
-usuari1@popos22:~$ /home/<nom_usuari>
+usuari1@mint:~$ /home/<nom_usuari>
 ```
 
 ```console
-miquel@popos22:~$ /home/miquel/Documents/dawbio-m01.txt
+miquel@mint:~$ /home/miquel/Documents/dawbio-m01.txt
 ```
 
 Tant a Linux com a Windows, per defecte la carpeta de cada usuari conté altres carpetes:
 Desktop, Music, Documents, Downloads, etc...
 
 
-## Comanda cd (change directory)
+### Comanda cd (change directory)
 
-Ens serveix per moure'ns per les diferents carpetes del sistema; li podem passar rutes absolutes (la ruta sencera) 
+Ens serveix per moure'ns pels diferents directoris del sistema; li podem passar rutes absolutes (la ruta sencera) 
 
 o bé una ruta relativa (una ruta que depèn del directori on ens trobem).
 
+Llavors, veiem les moltes formes de moure'ns:
+
 ```console
-cd <carpeta>		accedeix a la carpeta interior si existeix
+cd Documents		accedeix al directori Documents si existeix
 cd ..			ves a la carpeta anterior (carpeta pare)
 cd .			La carpeta actual.
 cd ../../..		ves a 3 carpetes anteriors
-cd <ruta_absoluta> 	Pots posar rutes absolutes (rutes que comencen des del root; si existeix, anirà directament a la carpeta)
+cd /home/alumne/dir1 	(*) Pots posar rutes absolutes (rutes que comencen des del root; si existeix, anirà directament a la carpeta)
 cd ~			Ens dirigeix automàticament a la carpeta home de l'usuari actiu.
 ```
+
+(*) En aquest cas es pressuposa que tens un usuari anomenat alumne i un directori dir1
 
 ##### Exemple ruta absoluta.
 
 ```console
-usuari1@popos22:~$ cd /home/alumne/Documents/dadescovid-10122021.csv
+usuari1@mint:~$ cd /home/alumne/Documents/dadescovid-10122021.csv
 ```
 
 ##### Exemple ruta relativa.
 
 ```console 
-usuari1@popos22:~$cd Documents/
+usuari1@mint:~$cd Documents/
 ```
 
 Per a què funcioni, dins la nostra carpeta ha d'existir una carpeta anomenada Documents.
 
-#### Comanda pwd.
+### Comanda pwd.
 
 serveix per veure per pantalla a quina carpeta estem; és important per assegurar-nos que fem bé la ruta relativa.
 	
 ```console 
-usuari1@popos22:~$ pwd
+usuari1@mint:~$ pwd
 /home/usuari1/Desktop
 ``` 
 	
-#### Comanda ls
+### Comanda ls
 
-Serveix per llistar fitxers i carpetes, i tota la seva info.
+Serveix per llistar fitxers i directoris, i tota la seva info.
 
 ```console 
-ls	# Llista fitxers i carpetes		
-ls -l	# Llista fitxers i carpetes, format llarg (permisos, tamany...)
+ls	# Llista fitxers i directoris		
+ls -l	# Llista fitxers i directoris, format llarg (permisos, tamany...)
+ls -R	# Llista fitxers i directoris, de forma recursiva (els subdirectoris)
 ```
 
 Altres combinacions:
@@ -140,6 +149,7 @@ Altres combinacions:
 ```console 
 ls -a 
 ```
+
 Llista fitxers i carpetes, incloent els ocults.
 
 Ls admet molts paràmetres alhora:
@@ -147,28 +157,109 @@ Ls admet molts paràmetres alhora:
 ```console
 ls -la 
 ```
+
 Llista fitxers i carpetes, format llarg (permisos, tamany...), incloent els ocults.
  
-<strong>I la comanda més potent i completa:</strong>
+<strong>I la comanda més potent i completa:
 
 ```console 
 ls -lisah
-``` 
-	
+```
+</strong>
+
+Que aplica 5 filtres a ls:
 [Explicació comanda ls -lisah](https://explainshell.com/explain?cmd=ls+-lisah)
-	
 
-#### Més comandes:
 
-**mkdir <carpeta>**
+## Comanda Ajuda: man
 
-Crea una o més carpetes.
+La comanda **man** (de manual) és la que ens permet consultar com funciona cada comanda.
+
+Prova de consultar info sobre ls:
+
+```console 
+man ls
+```
+
+Per sortir, pitja q.
+
+## Teoria Bloc 2: «Comandes gestió directoris»
+
+### mkdir --> Creació directoris
+
+Et permet crear un o més directoris.
 
 És molt potent, permet crear moltes carpetes alhora:
 
-[https://www.ionos.es/digitalguide/servidores/configuracion/comando-mkdir-de-linux/#:~:text=El%20comando%20de%20Linux%20conocido,crear%20jerarqu%C3%ADas%20de%20carpetas%20complejas.]
+<em>Exemple 1: Crea un directori m01 i dins un directori anomenat Linux.</em>
 
-**touch <nom_fitxer>**
+```sh
+mkdir m01
+mkdir m01/linux
+```
+
+<em>Exemple 2: Crea el directori m01, entra-hi i dins crea 3 directoris: fedora, mint, ubuntu.</em>
+
+```sh
+mkdir m01
+cd m01
+mkdir fedora mint ubuntu
+```
+
+La comanda mkdir és molt potent i ens permet crear directoris i subdirectoris en la mateixa línia, o fins i tot directoris seguint 
+patrons definits.
+
+<em>Exemple 3. Creem un arbre de carpetes amb els mòduls de dawbio1</em>
+
+```sh
+miquel@mint:~$ mkdir -p dawbio1/{m01/{pts,pes},m02,m03,m04,m05,m14}
+```
+
+<em>Exemple 4. Creem carpetes per a 10 usuaris, començant per user1 i acabant per user10.</em>
+
+```sh
+miquel@mint:~$ mkdir -p user{1..10}
+```
+
+Recorda:
+- mkdir  	crear directoris
+- ls 		llista directoris i arxius
+- cd		salta a un altre directori
+- pwd		mostra en quin directori estàs
+
+És molt bàsic, però els professionals tendeixen a oblidar-ho.
+
+<a href="https://www.ionos.es/digitalguide/servidores/configuracion/comando-mkdir-de-linux/#:~:text=El%20comando%20de%20Linux%20conocido,crear%20jerarqu%C3%ADas%20de%20carpetas%20complejas">Més exemples d'ús de mkdir a Linux</a>
+
+#### Exercici 11. Crea el directori Debian, dintre d'aquest els directoris Kali, MX i Ubuntu i dins d'ubuntu els directoris Mint, PopOS i Lubuntu. Mostra que s'han creat tots.
+
+#### Exercici 12. Crea el directori futfem i dintre els directoris oshoala,aitana,mapi,patri i els directoris ocults .tactiques i .sous (si vols crea’n unes altres semblants). Mostra els directoris creats, inclos els ocults.
+
+<summary>Solucions Exercicis mkdir</summary>
+<detail>
+Ex11. 
+```sh
+miquel@mint:~$ mkdir Debian
+miquel@mint:~$ cd Debian
+miquel@mint:~$ mkdir Kali,MX,Ubuntu
+miquel@mint:~$ cd Ubuntu
+miquel@mint:~$ mkdir Mint,PopOS,Lubuntu
+miquel@mint:~$ cd ../..
+miquel@mint:~$ ls
+```
+
+Ex12. 
+```sh
+miquel@mint:~$ mkdir -p futfem/{oshoala,aitana,mapi,patri,.tactiques,.sous}
+miquel@mint:~$ ls -la
+```
+</detail>
+
+
+--
+Fins aquí he revisat. 
+
+### touch <nom_fitxer>
 
 Crea un fitxer buit. 
 
@@ -195,10 +286,10 @@ Per a sortir
 El cd també funciona a MS-DOS (terminal de Windows). 
 	
 Tanmateix, moltes comandes a Windows són diferents (per exemple. L’ls de Linux és dir amb Windows), i moltes d’altres ni existeixen.
-Per a tenir una shell tant avançada com la de Unix i GNU/Linux cal instal.lar extensions com PowerShell; i ni tan sols així s'aconsegueixen 
+Per a tenir una shell tant avançada com la de Unix i GNU/Linux cal usar la terminal com PowerShell; i ni tan sols així s'aconsegueixen 
 tantes prestancions com amb Linux.
 
-Una altra opció per gaudir de Linux a Windows, disponible a partir de Windows, és instal.lar l'WSL (Windows Subsystem for Linux) si som administradors/es.
+Una altra opció per gaudir de Linux a Windows, disponible a partir de Windows, és instal.lar l'<a href="https://learn.microsoft.com/es-es/windows/wsl/install">WSL (Windows Subsystem for Linux)</a> si som administradors/es.
 
 ---
 	
@@ -292,6 +383,7 @@ Si posem >> després de la comanda i el nom d’un fitxer, posem la sortida en u
 
 Escriu la o les comandes necessàries per cada cas, sense moure't del teu directori home:
 
+```bash
     1. Fes una còpia de "test1.txt" i deixa-la al directori "practica".
 	
     2. Mou "test2.txt" al teu directori home.
@@ -317,7 +409,7 @@ Escriu la o les comandes necessàries per cada cas, sense moure't del teu direct
     12. Fes una còpia oculta del directori "secrets" que es digui "copia-seguretat" dins de "practica".
 	
     13. Llista els fitxers del directori "copia-seguretat", inclosos els ocults.
-
+```
 
 ### Solucions Exercicis Bloc 2:
 
