@@ -1,6 +1,6 @@
 # M01-UF1-NF1-Introducció al terminal de Linux. Comandes de rutes, de gestió de fitxers i directoris.
 
-## Bloc 0: Instal.lació programes.
+## Bloc 0: Introducció al terminal: instal.lació programes, historial i ajuda.
 
 Abans que res, hem d'obrir el terminal de Linux. La seva icona està representada per una pantalla negra en diverses distribucions (les basades en Debian o Ubuntu). També pots obrir-lo amb la combinació de tecles **Ctrl + Alt + T**
 
@@ -22,9 +22,9 @@ Alternativa: sudo su
 
 En aquest cas, s'instal·len molts programes alhora.
 
-### Exercici: Instal.la 2 programes més amb la comanda apt install.
+### Exercici: Instal.la 2 programes més amb la comanda apt install i executa'ls per veure que fan.
 
-Útils:
+Programes útils que recomanem:
 - nano
 - inxi
 - tree
@@ -40,6 +40,36 @@ Per executar el programa instal.lat posa el seu nom:
 ```console 
 inxi
 ```
+
+Fixa't com n'és d'útil el programa **inxi**, que mostra les característiques del teu maquinari.
+
+
+### history --> Historial de comandes : 
+
+Hi ha un historial que guarda totes les comandes.
+
+Amb les fletxes amunt i avall et posa les comandes que has posat anteriorment (així no et cal escriure-les de nou)
+
+Amb la instrucció **history** veus totes les comandes que has usat fins ara:
+
+$ history
+
+Fins i tot, pots guardar en un fitxer .txt totes les comandes que has fet: 
+
+$ history > historial.txt
+
+## man --> Comanda Ajuda: man
+
+La comanda **man** (de manual) és la que ens permet consultar com funciona cada comanda.
+
+Prova de consultar info sobre ls:
+
+```console 
+man ls
+```
+
+Per sortir, pitja q.
+ 
 
 ---
 
@@ -142,22 +172,13 @@ Serveix per llistar fitxers i directoris, i tota la seva info.
 ls	# Llista fitxers i directoris		
 ls -l	# Llista fitxers i directoris, format llarg (permisos, tamany...)
 ls -R	# Llista fitxers i directoris, de forma recursiva (els subdirectoris)
+ls -a 	# Llista fitxers i directoris ocults.
 ```
 
-Altres combinacions:
-
-```console 
-ls -a 
-```
-
-Llista fitxers i carpetes, incloent els ocults.
-
-Ls admet molts paràmetres alhora:
-
+Ls admet molts paràmetres alhora; per exemple:
 ```console
 ls -la 
 ```
-
 Llista fitxers i carpetes, format llarg (permisos, tamany...), incloent els ocults.
  
 <strong>I la comanda més potent i completa:
@@ -170,18 +191,13 @@ ls -lisah
 Que aplica 5 filtres a ls:
 [Explicació comanda ls -lisah](https://explainshell.com/explain?cmd=ls+-lisah)
 
+### Tecla TAB --> Escriu el nom dels directoris més ràpid
 
-## Comanda Ajuda: man
+Si el nom del directori on vols anar existeix (per exemple: Desktop, Documents...) només cal que posis les primeres lletres i la tecla **TAB**.
 
-La comanda **man** (de manual) és la que ens permet consultar com funciona cada comanda.
+Se t'escriurà sol 😀
 
-Prova de consultar info sobre ls:
-
-```console 
-man ls
-```
-
-Per sortir, pitja q.
+També pot ser que et surtin tots els directoris que comencin per una lletra (la D)
 
 ## Teoria Bloc 2: «Comandes gestió directoris»
 
@@ -231,12 +247,22 @@ Recorda:
 
 <a href="https://www.ionos.es/digitalguide/servidores/configuracion/comando-mkdir-de-linux/#:~:text=El%20comando%20de%20Linux%20conocido,crear%20jerarqu%C3%ADas%20de%20carpetas%20complejas">Més exemples d'ús de mkdir a Linux</a>
 
+### Fitxers i carpetes ocultes.
+
+Per a crear un fitxer o carpeta **oculta és tan senzill com que el seu nom comenci per punt.**
+
+```sh
+mkdir .secretofmonkey
+touch .secretofmonkey.txt
+```
+
 #### Exercici 11. Crea el directori Debian, dintre d'aquest els directoris Kali, MX i Ubuntu i dins d'ubuntu els directoris Mint, PopOS i Lubuntu. Mostra que s'han creat tots.
 
 #### Exercici 12. Crea el directori futfem i dintre els directoris oshoala,aitana,mapi,patri i els directoris ocults .tactiques i .sous (si vols crea’n unes altres semblants). Mostra els directoris creats, inclos els ocults.
 
 <details>
 <summary><strong>Solucions Exercicis mkdir</strong></summary>
+	
 Ex11. 
 ```sh
 miquel@mint:~$ mkdir Debian
@@ -253,6 +279,7 @@ Ex12.
 miquel@mint:~$ mkdir -p futfem/{oshoala,aitana,mapi,patri,.tactiques,.sous}
 miquel@mint:~$ ls -la
 ```
+
 </details>
 
 ### tree --> arbre directoris i fitxers
@@ -272,9 +299,9 @@ Per a fer còpies de seguretat, usem la comanda cp
 
 La sintaxis és:
 
-**cp -arguments origen desti**
+**cp [opcions] origen desti**
 
-- Arguments: L'argument més habitual de cp és el -r; que ens fa una còpia recursiva del directori i tot els subdirectoris (i fitxers dins).
+- [opcions]: L'argument més habitual de cp és el -r; que ens fa una còpia recursiva del directori i tot els subdirectoris (i fitxers dins).
 - origen: El fitxer o directori que tenim. Ha d'existir, òbviament.
 - desti: El nom del fitxer o directori que volem. Pot existir o no; si no existeix el pot crear.
 
@@ -287,7 +314,11 @@ $ ls
 
 ### mv --> Moure i renombrar directoris (i fitxers)
 
-Exemple: Crea el directori Apu. Canvia el seu nom, es dirà Apunts. Mostra si s'han canviat el nom.
+La comanda mv a Linux serveix per dues coses: la més òbvia és la de moure un directori o fitxer cap a un altre lloc.
+
+Però també serveix per renombrar el nom d'un fitxer o directori.
+
+<em>Exemple: Crea el directori Apu. Canvia el seu nom, es dirà Apunts. Mostra si s'han canviat el nom.</em>
 
 ```sh
 $ mkdir Apu
@@ -295,35 +326,92 @@ $ mv Apu Apunts
 $ ls
 ```
 
-### rm -->Esborrar directoris (i fitxers)
+### rm --> Esborrar directoris (i fitxers)
 
+Si volem esborrar un directori el més habitual és usar la comanda rm.
 
-## MATERIAL PENDENT DE REINDEXAR PER AQUÍ 
+La sintaxis és :
+
+**rm [opcions] origen desti**
+- [opcions]: L'argument més habitual de rm és el -r; que ens elimina recursivament directori i tot els subdirectoris (i fitxers dins).
+També s'usa el f (forçar l'esborrat sense demanar permís).
+- origen: El fitxer o directori volem eliminar. Ha d'existir, clar.
+
+<em>Exemple: Crea el directori lindows. Esborra el directori i tot el seu contingut.</em>
+```sh
+$ mkdir lindows
+$ rm -r lindows
+$ ls
+```
+
+La comanda rmdir només ens serveix per esborrar directoris buits.
+
 
 ## Teoria Bloc 3: «Comandes gestió fitxers»
 
-### touch <nom_fitxer>
+### cp, rm i mv --> Copiar i moure i eliminar fitxers
 
-Crea un fitxer buit. 
+Les comandes funcionen igual que en els directoris, que ja les hem analitzat i provat.
 
-També serveix per fer que canvii els permisos de modificació al dia i hora actuals (d'aquí el nom de tocar).
+### touch --> Crear fitxers buits
 
-**cat <nom_fitxer>**
+Crea un fitxer buit (o més, seguits per comes). 
 
-Visualitza el contingut d'un fitxer que només tingui text (no val per Writer/Word).
+També serveix per fer que canvii els permisos de modificació al dia i hora actuals (d'aquí el nom de tocar) si aquest existeix.
 
-**nano <nom_fitxer>**
+Prova-ho tu mateix/a:
 
-Editor de text del terminal.
+```sh
+$ touch demo.txt
+$ touch demo2.txt
+$ touch demo.txt
+```
 
-Per a guardar cal fer la combinació
+### nano --> Editor de text del terminal.
 
+Editor de text que funciona sense sortir del terminal. 
+
+Si voleu publicar les vostres aplicacions us haureu d'acostumar a usar-lo, ja que els servidors d'aplicacions web més potents no tenen entorn gràfic (consumeix recursos innecessaris) i cal usar comandes del terminal per arrencar-los, organitzar el seu contingut ...
+
+Aquí en teniu una mostra:
+![editor nano gif](https://media.geeksforgeeks.org/wp-content/uploads/20200304140712/cutpaste.gif)
+
+Escriu:
+
+```sh
+nano fitxer.txt
+```
+
+Aquí podràs escriure el seu contingut.
+
+Per a guardar el fitxer, cal fer la combinació
+
+```sh
 : w
-
+```
 Per a sortir
 
+```sh
 : q
- 
+```
+
+Els : inicials el que fan és canviar del mode d'escriptura del fitxer al mode del menú de programa.
+
+### cat --> Visualitza el contingut d'un fitxer.
+
+Visualitza el contingut d'un fitxer que només tingui text (no val per Writer/Word) sense necessitat d'obrir-lo.
+
+Tot és per millorar el rendiment.
+
+### head, tail --> Visualitza les primeres / últimes línies d'un fitxer.
+
+Si vols veure només les n primeres línies o les n últimes linies:
+head -n 3 <nom_fitxer>
+tail -n 3 <nom_fitxer>
+
+Exercici: Crea un fitxer amb el nano, escriu-hi (o copia i enganxa) més de 10 línies i guarda'l. Prova les comandes head i tail per veure si funciona.
+
+
 #### Curiositats del terminal: 
 	
 El cd també funciona a MS-DOS (terminal de Windows). 
@@ -334,9 +422,8 @@ tantes prestancions com amb Linux.
 
 Una altra opció per gaudir de Linux a Windows, disponible a partir de Windows, és instal.lar l'<a href="https://learn.microsoft.com/es-es/windows/wsl/install">WSL (Windows Subsystem for Linux)</a> si som administradors/es.
 
----
- 
-### Exercicis - «Directoris, rutes, i creació de fitxers»
+
+## Exercicis Repàs 1 - «Directoris, rutes, i creació de fitxers»
 
 <em> Comandaments: cd, ls, pwd, cp, mkdir, cat, touch, nano. </em>
 
@@ -371,7 +458,7 @@ Escriu la o les comandes necessàries per cada cas:
         ◦ Utilitzant una ruta relativa, amb el directori actual.
         ◦ Utilitzant una ruta absoluta.
           
-### Solucions Bloc :
+### Solucions Exercicis Repàs 1 :
 
 1	cd ~ o cd /home/<usuari>
 
@@ -400,29 +487,9 @@ Escriu la o les comandes necessàries per cada cas:
 13	cat test1.txt, cat ./test1.txt, cat /home/alumne/practica/test1.txt
 
 
+<em> Comandaments: cat, cp, ls, mkdir, mv, nano, rm, > i >> </em>
 
-## Bloc 3: «Gestió de fitxers»
-
-<em> Comandaments: cat, cp, ls, mkdir, mv, nano, rm. </em>
-
-Tipus de sortida del terminal: 
-
-per defecte les comandes surten per consola
-```console
-	ls -l
-```
-
-Si fiquem > després de la comanda i el nom d’un fitxer, posem la sortida en un fitxer
-```console
-   ls -l > fitxesCarpeta.txt
-```
-
-Si posem >> després de la comanda i el nom d’un fitxer, posem la sortida en un fitxer d’error.
-```console
-   ls -l >> fitxesError.txt
-```
-
-## Exercicis Bloc 2:
+## Exercicis Repàs 2:
 
 Escriu la o les comandes necessàries per cada cas, sense moure't del teu directori home:
 
@@ -452,8 +519,7 @@ Escriu la o les comandes necessàries per cada cas, sense moure't del teu direct
 	
     13. Llista els fitxers del directori "copia-seguretat", inclosos els ocults.
 
-### Solucions Exercicis Bloc 3:
-
+### Solucions Exercicis Repàs 2:
 
 1	cp practica/test1.txt practica/test2.txt
 
