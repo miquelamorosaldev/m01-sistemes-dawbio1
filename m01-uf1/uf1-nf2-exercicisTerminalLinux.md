@@ -1,6 +1,6 @@
 # M01-UF1-NF1-Introducció al terminal de Linux. Comandes de rutes, de gestió de fitxers i directoris.
 
-# Bloc 0: Instal.lació programes.
+## Bloc 0: Instal.lació programes.
 
 Abans que res, hem d'obrir el terminal de Linux. La seva icona està representada per una pantalla negra en diverses distribucions (les basades en Debian o Ubuntu). També pots obrir-lo amb la combinació de tecles **Ctrl + Alt + T**
 
@@ -235,8 +235,8 @@ Recorda:
 
 #### Exercici 12. Crea el directori futfem i dintre els directoris oshoala,aitana,mapi,patri i els directoris ocults .tactiques i .sous (si vols crea’n unes altres semblants). Mostra els directoris creats, inclos els ocults.
 
-<summary>Solucions Exercicis mkdir</summary>
-<detail>
+<details>
+<summary><strong>Solucions Exercicis mkdir</strong></summary>
 Ex11. 
 ```sh
 miquel@mint:~$ mkdir Debian
@@ -253,11 +253,54 @@ Ex12.
 miquel@mint:~$ mkdir -p futfem/{oshoala,aitana,mapi,patri,.tactiques,.sous}
 miquel@mint:~$ ls -la
 ```
-</detail>
+</details>
+
+### tree --> arbre directoris i fitxers
+
+Apart de ls, si només ens interessa els noms dels directoris (i dels fitxers) podem usar la comanda tree.
+
+En algunes distros cal instal·lar-la:
+
+```sh
+$ sudo apt install tree
+$ tree
+```
+
+### cp --> Còpia de directoris (i fitxers)
+
+Per a fer còpies de seguretat, usem la comanda cp
+
+La sintaxis és:
+
+**cp -arguments origen desti**
+
+- Arguments: L'argument més habitual de cp és el -r; que ens fa una còpia recursiva del directori i tot els subdirectoris (i fitxers dins).
+- origen: El fitxer o directori que tenim. Ha d'existir, òbviament.
+- desti: El nom del fitxer o directori que volem. Pot existir o no; si no existeix el pot crear.
+
+Exemple: Fes una còpia de tot el contingut del directori futfem (si no el tens crea'l) cap a una nova carpeta futfem2023.
+
+```sh
+$ cp -r futfem futfem2023
+$ ls
+```
+
+### mv --> Moure i renombrar directoris (i fitxers)
+
+Exemple: Crea el directori Apu. Canvia el seu nom, es dirà Apunts. Mostra si s'han canviat el nom.
+
+```sh
+$ mkdir Apu
+$ mv Apu Apunts
+$ ls
+```
+
+### rm -->Esborrar directoris (i fitxers)
 
 
---
-Fins aquí he revisat. 
+## MATERIAL PENDENT DE REINDEXAR PER AQUÍ 
+
+## Teoria Bloc 3: «Comandes gestió fitxers»
 
 ### touch <nom_fitxer>
 
@@ -292,8 +335,8 @@ tantes prestancions com amb Linux.
 Una altra opció per gaudir de Linux a Windows, disponible a partir de Windows, és instal.lar l'<a href="https://learn.microsoft.com/es-es/windows/wsl/install">WSL (Windows Subsystem for Linux)</a> si som administradors/es.
 
 ---
-	
-## Exercicis Bloc 1 - «Directoris, rutes, i creació de fitxers»
+ 
+### Exercicis - «Directoris, rutes, i creació de fitxers»
 
 <em> Comandaments: cd, ls, pwd, cp, mkdir, cat, touch, nano. </em>
 
@@ -328,7 +371,7 @@ Escriu la o les comandes necessàries per cada cas:
         ◦ Utilitzant una ruta relativa, amb el directori actual.
         ◦ Utilitzant una ruta absoluta.
           
-### Solucions Bloc 1:
+### Solucions Bloc :
 
 1	cd ~ o cd /home/<usuari>
 
@@ -358,7 +401,7 @@ Escriu la o les comandes necessàries per cada cas:
 
 
 
-## Bloc 2: «Gestió de fitxers»
+## Bloc 3: «Gestió de fitxers»
 
 <em> Comandaments: cat, cp, ls, mkdir, mv, nano, rm. </em>
 
@@ -383,7 +426,6 @@ Si posem >> després de la comanda i el nom d’un fitxer, posem la sortida en u
 
 Escriu la o les comandes necessàries per cada cas, sense moure't del teu directori home:
 
-```bash
     1. Fes una còpia de "test1.txt" i deixa-la al directori "practica".
 	
     2. Mou "test2.txt" al teu directori home.
@@ -409,11 +451,10 @@ Escriu la o les comandes necessàries per cada cas, sense moure't del teu direct
     12. Fes una còpia oculta del directori "secrets" que es digui "copia-seguretat" dins de "practica".
 	
     13. Llista els fitxers del directori "copia-seguretat", inclosos els ocults.
-```
 
-### Solucions Exercicis Bloc 2:
+### Solucions Exercicis Bloc 3:
 
-```bash
+
 1	cp practica/test1.txt practica/test2.txt
 
 2	mv practica/test2.txt ~
@@ -439,6 +480,5 @@ Escriu la o les comandes necessàries per cada cas, sense moure't del teu direct
 12	cp -r practica/.secrets/ practica/.copia-seguritat
 
 13	ls -a practica/.copia-seguritat/
-```
 
 
