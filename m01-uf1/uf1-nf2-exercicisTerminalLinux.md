@@ -397,6 +397,19 @@ Per a sortir
 
 Els : inicials el que fan és canviar del mode d'escriptura del fitxer al mode del menú de programa.
 
+<em> Exemple. Crea un fitxer anomenat debian.txt des del terminal, usant l’editor nano. Ha de contenir el text:
+
+Debian és un sistema operatiu FOSS (lliure), creat l’any 1993 per Ian Murdock.
+</em>
+
+Recorda, els passos a seguir són:
+1. nano debian.txt
+2. Escriu el text
+3. Ctrl + X 
+4. INTRO
+5. nano debian.txt (veure contingut fitxer)
+
+
 ### cat --> Visualitza el contingut d'un fitxer.
 
 Visualitza el contingut d'un fitxer que només tingui text (no val per Writer/Word) sense necessitat d'obrir-lo.
@@ -409,16 +422,23 @@ Si vols veure només les n primeres línies o les n últimes linies:
 head -n 3 <nom_fitxer>
 tail -n 3 <nom_fitxer>
 
-Exercici: Crea un fitxer amb el nano, escriu-hi (o copia i enganxa) més de 10 línies i guarda'l. Prova les comandes head i tail per veure si funciona.
+<em>Exercici: Crea un fitxer amb el nano, escriu-hi (o copia i enganxa) més de 10 línies i guarda'l. Prova les comandes head i tail per veure si funciona.</em>
 
+<em>Exercici: Per si no ho sabies, per consultar els usuaris que hi ha al SO ho pots fer des del fitxer /etc/passwd. Mostra els 5 primers i 5 últims usuaris.</em>
+
+Solució Exercici /etc/passwd:
+
+```sh
+head -n 5 /etc/passwd
+tail -n 5 /etc/passwd
+```
 
 #### Curiositats del terminal: 
 	
 El cd també funciona a MS-DOS (terminal de Windows). 
 	
 Tanmateix, moltes comandes a Windows són diferents (per exemple. L’ls de Linux és dir amb Windows), i moltes d’altres ni existeixen.
-Per a tenir una shell tant avançada com la de Unix i GNU/Linux cal usar la terminal com PowerShell; i ni tan sols així s'aconsegueixen 
-tantes prestancions com amb Linux.
+Per a tenir una shell tant avançada com la de Unix i GNU/Linux cal usar la terminal com PowerShell; i ni tan sols així s'aconsegueixen  tantes prestancions com amb Linux.
 
 Una altra opció per gaudir de Linux a Windows, disponible a partir de Windows, és instal.lar l'<a href="https://learn.microsoft.com/es-es/windows/wsl/install">WSL (Windows Subsystem for Linux)</a> si som administradors/es.
 
@@ -547,4 +567,31 @@ Escriu la o les comandes necessàries per cada cas, sense moure't del teu direct
 
 13	ls -a practica/.copia-seguritat/
 
+## Per on continuar ??
 
+Ja hem cobert les comandes més bàsiques de Linux, classificades en:
+
+- Comandes instal·lar programes a Ubuntu (apt), ajuda, historial
+- Comandes gestió directoris (mkdir, cp, rm, mv)
+- Comandes gestió fitxers (cp, rm, mv, touch, cat, head, tail)
+- Editor terminal nano
+
+Ara tocaria seguir amb:
+
+- Comandes de **redirecció** (echo, >, >>, |, /dev/null) 
+- Comandes de gestió de **processos**
+- Execució d'**scripts bash** (chmod u+x script.sh)
+- Gestió d'usuaris
+- Gestió de permisos i propietat a Linux
+- Comandes de **cerca** (ls, find, grep)
+- Comandes de **filtre** (grep, sort, cut, sed, awk ...)
+- Gestió espai del disc (du, dh, free)
+- Comandes instal·lació i actualització en qualsevol distro de Linux
+- Comandes gestió de serveis
+- Comandes connexió a xarxes
+
+  A bioinformàtica són **especialment útils les de redirecció, cerca i filtre. I scripts**
+  De les altres, cal saber-ne uns mínims.
+
+  Pots descarregar-te una cheatsheet bàsica a:
+  [Cheatsheet (extensió ODS) Introducció al terminal de Linux](./resum_comandes_linux_imprimir.ods)
