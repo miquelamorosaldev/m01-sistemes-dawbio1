@@ -3,7 +3,7 @@
 1. Crea el fitxer hacking.sh
 
 ```bash
-!/bin/bash
+#!/bin/bash
 for i in {1..100}
 do
  echo "Hacking. $i% completed."
